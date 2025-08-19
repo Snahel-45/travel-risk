@@ -1141,3 +1141,364 @@ html,body{
     font-size: 20px;
     color: gold;
 }
+
+/* Bike */
+.bike-rent {
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 20px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.bike-details {
+  background: #f9f9f9;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.bike-details h2 {
+  font-size: 2rem;
+  color: #d35400;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.bike-details h3 {
+  font-size: 1.2rem;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
+
+.bike-details p, .bike-details ul {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: #444;
+}
+
+.bike-details ul {
+  list-style: none;
+  padding: 0;
+}
+
+.bike-details ul li {
+  padding-left: 25px;
+  position: relative;
+  margin-bottom: 8px;
+}
+
+.bike-details ul li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #27ae60;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .bike-image img {
+    height: 250px;
+  }
+}
+
+/* Table Container */
+.table-container {
+  width: 80%;
+  margin: 40px auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+/* Table */
+.table-container table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+}
+
+/* Table Header */
+.table-container thead {
+  background: #222;
+  color: #fff;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+/* Header Cells */
+.table-container th {
+  padding: 14px;
+  text-align: center;
+}
+
+/* Body Cells */
+.table-container td {
+  padding: 14px;
+  text-align: center;
+  font-size: 16px;
+  border-bottom: 1px solid #eee;
+}
+
+/* Last Row Border Remove */
+.table-container tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* Hover Effect */
+.table-container tbody tr:hover {
+  background: #f9f9f9;
+  transition: background 0.3s ease;
+}
+
+/* Price Column Styling */
+.table-container td:last-child {
+  font-weight: bold;
+  color: #e67e22;   /* Orange accent */
+}
+
+
+/* Rifting */
+/* Container */
+.rafting-table {
+  width: 85%;
+  margin: 40px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Title */
+.rafting-table h2 {
+  text-align: center;
+  color: #0077ff;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+/* Table */
+.rafting-table table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+}
+
+/* Header */
+.rafting-table thead th {
+  background: #222;
+  color: #fff;
+  text-align: center;
+  padding: 12px;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+/* Cells */
+.rafting-table td {
+  text-align: center;
+  padding: 12px;
+  font-size: 15px;
+  border-bottom: 1px solid #eee;
+}
+
+/* Section Headers */
+.section-header td {
+  font-weight: bold;
+  text-align: center;
+  font-size: 16px;
+  padding: 10px;
+}
+
+.section-header.koudiyala {
+  background: #f9e7a3; /* light yellow */
+}
+
+.section-header.marine {
+  background: #f9caca; /* light red */
+}
+
+.section-header.shivpuri {
+  background: #c9e7f9; /* light blue */
+}
+
+/* Hover */
+.rafting-table tbody tr:hover td {
+  background: #f7f7f7;
+  transition: 0.3s;
+}
+
+
+/* Raft*/
+/* Container */
+.rafting-table {
+  width: 85%;
+  margin: 40px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Title */
+.rafting-table h2 {
+  text-align: center;
+  color: #0077ff;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+/* Table */
+.rafting-table table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+}
+
+/* Header */
+.rafting-table thead th {
+  background: #222;
+  color: #fff;
+  text-align: center;
+  padding: 12px;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+/* Cells */
+.rafting-table td {
+  text-align: center;
+  padding: 12px;
+  font-size: 15px;
+  border-bottom: 1px solid #eee;
+}
+
+/* Section Headers */
+.section-header td {
+  font-weight: bold;
+  text-align: center;
+  font-size: 16px;
+  padding: 10px;
+}
+
+.section-header.koudiyala {
+  background: #f9e7a3; /* light yellow */
+}
+
+.section-header.marine {
+  background: #f9caca; /* light red */
+}
+
+.section-header.shivpuri {
+  background: #c9e7f9; /* light blue */
+}
+
+/* Hover */
+.rafting-table tbody tr:hover td {
+  background: #f7f7f7;
+  transition: 0.3s;
+}
+
+/* Additional Info */
+.additional-info {
+  padding: 40px;
+  background: #fff;
+}
+.additional-info h2 {
+  color: #d50000;
+  margin-bottom: 16px;
+}
+.additional-info ul {
+  list-style: none;
+  padding: 0;
+}
+.additional-info li {
+  color: #444;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+/* Bungee Info Box */
+.bungee-box {
+  display: flex;
+  justify-content: space-between;
+  background: linear-gradient(to right, #222, #111);
+  color: #fff;
+  padding: 40px;
+  margin: 30px auto;
+  width: 90%;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+}
+
+/* Price Box */
+.price-box {
+  width: 25%;
+  text-align: center;
+  border-right: 1px solid #333;
+}
+.price-box h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.price {
+  font-size: 32px;
+  font-weight: bold;
+  color: #00c853;
+}
+.book-btn {
+  display: inline-block;
+  margin-top: 16px;
+  padding: 10px 20px;
+  background: #00c853;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+/* Info Text */
+.info-text {
+  width: 70%;
+  padding-left: 30px;
+  font-size: 16px;
+  line-height: 1.6;
+}
+.info-text p {
+  margin: 12px 0;
+}
+.info-text .blue { color: #00b0ff; }
+.info-text .red { color: #ff4444; }
+.info-text .yellow { color: #ffcc00; }
+
+
+/* camp */
+.containerr {
+      max-width: 900px;
+      margin: 20px auto;
+      padding: 20px;
+      background: white;
+      box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
+      border-radius: 10px;
+    }
+     h2 {
+      text-align: center;
+      color: green;
+      margin-bottom: 10px;
+    }
+     h3 {
+      color: #0077ff;
+      margin-top: 20px;
+    }
+     p {
+      margin: 5px 0;
+      line-height: 1.6;
+    }
+    .icon {
+      margin-right: 6px;
+      color: #e63946;
+    }
+  .center {
+  text-align: center;
+}
