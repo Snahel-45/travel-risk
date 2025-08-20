@@ -90,9 +90,9 @@ body {
 header {
   padding-top: 100px;   /* push content below top-bar + navbar */
   text-align: center;
-  background: url("img/Background.jpeg") no-repeat center center/cover; 
+  /* background: url("img/Background.jpeg") no-repeat center center/cover;  */
   color: white;
-  height: 120vh;        /* full screen height */
+  height: 700px;        /* full screen height */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -327,8 +327,8 @@ main {
 } */
  /* ===== Hero Section ===== */
 .hero-section {
-  background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
-  height: 80vh;
+  background: url('img/Background.jpeg') no-repeat center center/cover;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
