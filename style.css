@@ -26,8 +26,8 @@ body {
 .top-bar {
   background-color: #007bff;
   color: #fff;
-  font-size: 16px;  /* Bigger text */
-  padding:  14px;  /* More height */
+  font-size: 12px;  /* Bigger text */
+  padding:  13.5px;  /* More height */
   position: fixed;
   top: 0;
   left: 0;
@@ -119,7 +119,7 @@ main {
   top: 50px; /* sits below top bar */
   left: 0;
   width: 100%;
-  background: rgba(0, 0, 0, 0.7); /* transparent dark glass effect */
+  background:  lab(0% 0 0); /* transparent dark glass effect */
   backdrop-filter: blur(8px);
   box-shadow: 0 4px 12px rgba(0,0,0,0.3);
   z-index: 999;
@@ -786,49 +786,11 @@ html,body{
   border: 1px solid #ccc;
   font-size: 16px;
 }
-/* Dropdown Styles */
-.dropdown {
-  position:relative;
-  display: inline-block;
-}
 
-.dropbtn {
-  text-decoration: none;
-  padding: 10px 15px;
-  display: inline-block;
-  color: #fff;
-}
 
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #333;
-  min-width: 180px;
-  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
-  z-index: 1000;
-}
 
-.dropdown-content a {
-  color: #fff;
-  padding: 10px 15px;
-  text-decoration: none;
-  display: block;
-}
 
-.dropdown-content a:hover {
-  background-color: #444;
-}
 
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-@media (max-width: 768px) {
-  .dropdown-content {
-    left: 50%;
-    transform: translateX(-50%);
-    text-align: center; 
-  }
-}
 /* Paragliding Section */
 .paragliding-section {
   text-align: center;
@@ -1672,7 +1634,11 @@ html,body{
   }
 }
 
-
+/* @media (max-width: 480px) {
+  .navbar{
+    position: relative;
+  }
+} */
 
 .about-testimonials {
     background-color: #fff;
@@ -1739,3 +1705,84 @@ html,body{
             }
         }
         
+/* Base Dropdown */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  text-decoration: none;
+  padding: 10px 15px;
+  display: inline-block;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Desktop Dropdown (hover) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;                    /* center horizontally */
+  transform: translateX(-50%);  /* align center */
+  background-color: #333;
+  min-width: 200px;
+  border-radius: 6px;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.25);
+  z-index: 1000;
+  text-align: center;
+}
+
+.dropdown-content a {
+  color: hsla(69, 87%, 44%, 0.533);
+  padding: 10px 15px;
+  display: block;
+  text-decoration: none;
+}
+
+.dropdown-content a:hover {
+  background-color: #444;
+}
+
+@media (min-width: 769px) {
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+}
+
+/* Mobile Dropdown (accordion style) */
+@media (max-width: 768px) {
+  .dropdown-content {
+    position: static;
+    transform: none;     /* no center shift */
+    width: 100%;
+    display: none;       /* hidden by default */
+    background: lab(0% 0 0);;
+    border-radius: 0;
+    box-shadow: none;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .dropdown-content.show {
+    display: flex;       /* toggled by JS */
+  }
+
+  .dropdown-content a {
+    padding: 12px 20px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    text-align: center;
+    width: 100%;
+  }
+}
+
+.hero-section {
+  margin-top: 90px; /* adjust for fixed navbar + top bar */
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    margin-top: 120px; /* more padding on mobile */
+  }
+}
