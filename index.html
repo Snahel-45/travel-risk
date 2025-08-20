@@ -30,27 +30,27 @@
 </div>
 <!-- ====== End Top Bar ====== -->
 
-    <nav class="navbar">
-      <div class="container">
-      <a href="index.html">Home</a>
-      <div class="dropdown">
-      <a href="packages.html" class="dropbtn">Packages <i class="fas fa-caret-down"></i></a>
+   <nav class="navbar">
+  <div class="container">
+    <a href="index.html">Home</a>
+    
+    <div class="dropdown">
+      <a href="javascript:void(0)" class="dropbtn" onclick="toggleDropdown(this)">Packages <i class="fas fa-caret-down"></i></a>
       <div class="dropdown-content">
         <a href="Paragliding-Rishikesh.html">Paragliding in Rishikesh</a>
         <a href="Bike-Riding.html">Bike on Rent in Rishikesh</a>
         <a href="Rafting.html">Rafting in Rishikesh</a>
         <a href="Banjee.html">Bunjee in Rishikesh</a>
         <a href="Camping.html">Camping in Rishikesh</a>
-
-        
-        
       </div>
     </div>
-      <a href="gallery.html">Gallery</a>
-      <a href="about.html">About Us</a>
-      <a href="contact.html">Contact</a>
-      </div>
-    </nav>
+
+    <a href="gallery.html">Gallery</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</nav>
+
 
     <main>
       <section class="hero-section">
@@ -245,6 +245,42 @@
   </div>
 </footer>
 <script src="script.js"></script>
+<script>
+  function toggleDropdown(el) {
+    // Only activate dropdown on mobile screens
+    if (window.innerWidth <= 768) {
+      document.querySelectorAll(".dropdown-content").forEach(menu => {
+        if (menu !== el.nextElementSibling) menu.classList.remove("show");
+      });
+      el.nextElementSibling.classList.toggle("show");
+    }
+  }
+
+  // Global listener to close dropdown
+  document.addEventListener("click", function (e) {
+    if (window.innerWidth <= 768) {
+      const isDropBtn = e.target.closest('.dropbtn');
+      const isDropdownLink = e.target.closest('.dropdown-content a');
+      const isNavLink = e.target.closest('nav a');
+
+      if (!isDropBtn) {
+        document.querySelectorAll(".dropdown-content").forEach(menu => {
+          menu.classList.remove("show");
+        });
+      }
+
+      // Also close on any link click
+      if (isDropdownLink || isNavLink) {
+        document.querySelectorAll(".dropdown-content").forEach(menu => {
+          menu.classList.remove("show");
+        });
+      }
+    }
+  });
+</script>
+
+
+
 
 </body>
 </html>
