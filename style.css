@@ -90,7 +90,7 @@ body {
 header {
   padding-top: 100px;   /* push content below top-bar + navbar */
   text-align: center;
-  background: url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e") no-repeat center center/cover;
+  background: url("img/Background.jpeg") no-repeat center center/cover; 
   color: white;
   height: 120vh;        /* full screen height */
   display: flex;
