@@ -88,9 +88,9 @@ body {
   text-align: center;
 } */
 header {
-  padding-top: 100px;   /* push content below top-bar + navbar */
+  padding-top: 100px;   
   text-align: center;
-  /* background: url("img/Background.jpeg") no-repeat center center/cover;  */
+  background: url("img/Background.jpeg") no-repeat center center/cover; 
   color: white;
   height: 700px;        /* full screen height */
   display: flex;
@@ -121,6 +121,7 @@ main {
   width: 100%;
   background:  lab(0% 0 0); /* transparent dark glass effect */
   backdrop-filter: blur(8px);
+  justify-content: space-between;
   box-shadow: 0 4px 12px rgba(0,0,0,0.3);
   z-index: 999;
 }
@@ -155,6 +156,34 @@ main {
   background: #19b6a9;
   color: #333;
   font-weight: 700;
+}
+/* Logo styling */
+.navbar-logo img {
+  height: 55px;       
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+/* Tablet size */
+@media (max-width: 1024px) {
+  .navbar-logo img {
+    height: 45px;
+  }
+}
+
+/* Mobile size */
+@media (max-width: 768px) {
+  .navbar-logo img {
+    height: 40px;
+  }
+}
+
+/* Very small phones */
+@media (max-width: 480px) {
+  .navbar-logo img {
+    height: 35px;
+  }
 }
 
 
@@ -249,6 +278,8 @@ main {
   color: #333;
   margin-bottom: 8px;
   justify-content: center;
+  margin-left: auto;
+  margin-left: auto;
 }
 
 .card p {
@@ -1532,6 +1563,11 @@ html,body{
   font-size: 20px;
   font-weight: bold;
   color: #3a2ab9; 
+  
+  text-align: center;
+}
+.card p {
+  text-align: center;
 }
 
 .card .quote {
@@ -1752,7 +1788,7 @@ html,body{
 }
 
 /* Mobile Dropdown (accordion style) */
-@media (max-width: 768px) {
+@media (max-width: 995px) {
   .dropdown-content {
     position: static;
     transform: none;     /* no center shift */
