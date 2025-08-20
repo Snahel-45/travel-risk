@@ -30,10 +30,11 @@
 </div>
 
     <nav class="navbar">
-      <div class="container">
-      <a href="index.html">Home</a>
-      <div class="dropdown">
-      <a href="packages.html" class="dropbtn">Packages <i class="fas fa-caret-down"></i></a>
+  <div class="container">
+    <a href="index.html">Home</a>
+    
+    <div class="dropdown">
+      <a href="javascript:void(0)" class="dropbtn" onclick="toggleDropdown(this)">Packages <i class="fas fa-caret-down"></i></a>
       <div class="dropdown-content">
         <a href="Paragliding-Rishikesh.html">Paragliding in Rishikesh</a>
         <a href="Bike-Riding.html">Bike on Rent in Rishikesh</a>
@@ -42,11 +43,13 @@
         <a href="Camping.html">Camping in Rishikesh</a>
       </div>
     </div>
-      <a href="gallery.html">Gallery</a>
-      <a href="about.html">About Us</a>
-      <a href="contact.html">Contact</a>
-      </div>
-    </nav>
+
+    <a href="gallery.html">Gallery</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</nav>
+
     <main>
       <section class="about-content">
         <div class="about-image">
@@ -62,53 +65,41 @@
 
     </main>
 
-    <section class="testimonials">
-  <h2>Testimonials</h2>
-
-  <!-- Swiper container -->
-  <div class="swiper testimonial-slider">
-    <div class="swiper-wrapper">
-
-      <!-- Testimonial Slide 1 -->
-      <div class="swiper-slide card">
+    <section class="about-testimonials">
+  <h1>Testimonials</h1>
+  <div class="testimonial-row">
+    <div class="testimonial-track">
+      <div class="card">
         <img src="https://media.telanganatoday.com/wp-content/uploads/2021/05/M-B-Rajesh.jpg" alt="Rajesh Malhotra">
         <h3>Rajesh Malhotra</h3>
         <p class="quote">"We booked the 20-seater tempo traveller for a wedding. Everything was smooth."</p>
         <div class="stars">★★★★☆</div>
       </div>
-
-      <!-- Slide 2 -->
-      <div class="swiper-slide card">
+      <div class="card">
         <img src="https://storage.googleapis.com/media-news/58102-Sonal.jpg" alt="Sonal Jain">
         <h3>Sonal Jain</h3>
         <p class="quote">"Affordable pricing and well-maintained vehicles. Definitely booking again!"</p>
         <div class="stars">★★★★★</div>
       </div>
-
-      <!-- Slide 3 -->
-      <div class="swiper-slide card">
+      <div class="card">
         <img src="https://i.scdn.co/image/ab6761610000e5eb51b3b9b3d644e2fd86515834" alt="Amit Roy">
         <h3>Amit Roy</h3>
         <p class="quote">"Great experience with their 17-seater Urbania. Clean, comfortable, and timely!"</p>
         <div class="stars">★★★★★</div>
       </div>
-
-      <!-- Slide 4 -->
-      <div class="swiper-slide card">
+      <div class="card">
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthKckH_epVdiL9zthxF6lTCWw8fAnIL5fcg&s" alt="Anita Sharma">
         <h3>Anita Sharma</h3>
         <p class="quote">"Prompt service and courteous drivers. Our trip to Haridwar was wonderful."</p>
         <div class="stars">★★★★☆</div>
       </div>
-
-      <!-- Slide 5 -->
-      <div class="swiper-slide card">
+      <div class="card">
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPm3UpYYfXC7rW1AnNIqDI6VxCXjJmxJf51Q&s" alt="Dev Mehra">
         <h3>Dev Mehra</h3>
         <p class="quote">"Perfect family vacation van. Reliable and safe. Will definitely use again."</p>
         <div class="stars">★★★★★</div>
       </div>
-
+      
     </div>
   </div>
 </section>
