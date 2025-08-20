@@ -33,9 +33,10 @@
    <nav class="navbar">
   <div class="container">
     <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
     
     <div class="dropdown">
-      <a href="javascript:void(0)" class="dropbtn" onclick="toggleDropdown(this)">Packages <i class="fas fa-caret-down"></i></a>
+      <a href="javascript:void(0)" class="dropbtn" onclick="toggleDropdown(this,event)">Packages <i class="fas fa-caret-down"></i></a>
       <div class="dropdown-content">
         <a href="Paragliding-Rishikesh.html">Paragliding in Rishikesh</a>
         <a href="Bike-Riding.html">Bike on Rent in Rishikesh</a>
@@ -46,7 +47,6 @@
     </div>
 
     <a href="gallery.html">Gallery</a>
-    <a href="about.html">About Us</a>
     <a href="contact.html">Contact</a>
   </div>
 </nav>
@@ -196,6 +196,32 @@
   </div>
 </section>
 
+<section class="contact-section">
+  <div class="container">
+    <h2>📩 Get in Touch</h2>
+    <p>We’d love to hear from you! Fill out the form below or contact us directly.</p>
+
+    <div class="contact-grid">
+      <!-- Contact Form -->
+      <form class="contact-form">
+        <div class="form-group">
+          <input type="text" placeholder="Your Name" required />
+        </div>
+        <div class="form-group">
+          <input type="email" placeholder="Your Email" required />
+        </div>
+        <div class="form-group">
+          <input type="tel" placeholder="Your Phone" />
+        </div>
+        <div class="form-group">
+          <textarea placeholder="Your Message" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+   </div>
+  </div>
+</section>
+
 
     <footer class="site-footer">
   <div class="footer-container">
@@ -246,31 +272,30 @@
 </footer>
 <script src="script.js"></script>
 <script>
-  function toggleDropdown(el) {
-    // Only activate dropdown on mobile screens
+  function toggleDropdown(el, event) {
     if (window.innerWidth <= 768) {
+      event.preventDefault();     // stop link jump
+      event.stopPropagation();    // stop bubbling
+
+      const dropdown = el.nextElementSibling;
+      const isOpen = dropdown.classList.contains("show");
+
+      // Close all menus
       document.querySelectorAll(".dropdown-content").forEach(menu => {
-        if (menu !== el.nextElementSibling) menu.classList.remove("show");
+        menu.classList.remove("show");
       });
-      el.nextElementSibling.classList.toggle("show");
+
+      // If not already open → open it
+      if (!isOpen) {
+        dropdown.classList.add("show");
+      }
     }
   }
 
-  // Global listener to close dropdown
+  // Close dropdowns if clicked outside
   document.addEventListener("click", function (e) {
     if (window.innerWidth <= 768) {
-      const isDropBtn = e.target.closest('.dropbtn');
-      const isDropdownLink = e.target.closest('.dropdown-content a');
-      const isNavLink = e.target.closest('nav a');
-
-      if (!isDropBtn) {
-        document.querySelectorAll(".dropdown-content").forEach(menu => {
-          menu.classList.remove("show");
-        });
-      }
-
-      // Also close on any link click
-      if (isDropdownLink || isNavLink) {
+      if (!e.target.closest(".dropdown")) {
         document.querySelectorAll(".dropdown-content").forEach(menu => {
           menu.classList.remove("show");
         });
@@ -278,9 +303,6 @@
     }
   });
 </script>
-
-
-
 
 </body>
 </html>
