@@ -159,7 +159,7 @@ main {
 }
 /* Logo styling */
 .navbar-logo img {
-  height: 55px;       
+  height: 45px;       
   width: auto;
   max-width: 100%;
   object-fit: contain;
@@ -935,6 +935,7 @@ html,body{
   font-size: 2.5rem;
   font-weight: 800;
   margin-bottom: 20px;
+  padding-top: 10px;
   color: #0d47a1;
   position: relative;
 }
@@ -943,11 +944,11 @@ html,body{
   content: "";
   position: absolute;
   left: 0;
-  bottom: -8px;
+  bottom: -10px;
   width: 80px;
-  height: 4px;
+  height: px;
   background: linear-gradient(90deg, #1565c0, #42a5f5);
-  border-radius: 2px;
+  border-radius: 3px;
 }
 
 .about-text p {
@@ -1489,6 +1490,8 @@ html,body{
       background: white;
       box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
       border-radius: 10px;
+      display: flex;
+      justify-content: space-between;
     }
      h2 {
       text-align: center;
@@ -1680,6 +1683,13 @@ html,body{
     background-color: #fff;
     padding: 60px 20px;
     text-align: center;
+}
+.about-testimonials h1 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #111;
+    padding: 10px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .testimonials h1 {
