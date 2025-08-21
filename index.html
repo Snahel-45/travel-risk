@@ -40,7 +40,7 @@
     <button class="menu-toggle" onclick="toggleMenu()">
       <i class="fas fa-bars"></i>
     </button>
-
+    <div class="nav-links">
     <a href="index.html">Home</a>
     <a href="about.html">About Us</a>
     
@@ -59,6 +59,7 @@
     <a href="contact.html">Contact</a>
 
     
+  </div>
   </div>
 </nav>
 
@@ -334,6 +335,10 @@
       }
     }
   });
+
+  function toggleMenu() {
+  document.querySelector(".nav-links").classList.toggle("show");
+}
 </script>
 
 </body>
