@@ -102,6 +102,7 @@ header {
 header h1 {
   margin-bottom: 5px;
   font-size: 28px;
+  color:#ffffff;
 }
 
 header p {
@@ -907,7 +908,7 @@ html,body{
 }
 @media (max-width: 480px) {
   .about-image{
-  padding-top: 160px;
+  padding-top: 9px;
   border-radius: 30%;
   }
 }
@@ -1950,4 +1951,95 @@ html,body{
 .hero-section {
   margin-top: 0;
   padding-top: 0;
+}
+
+/* =======================
+   DESKTOP NAVBAR STYLES
+   ======================= */
+.navbar {
+  background-color: #000;
+  color: #fff;
+  padding: 5px 0;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.navbar-logo img {
+  height: 35px;
+  width: auto;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.nav-links a:hover {
+  color: #FFD700;
+}
+
+
+@media (max-width: 768px) {
+  .navbar .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-mobile {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+
+  .navbar-logo img {
+    height: 40px;
+  }
+
+  .menu-toggle {
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #000;
+    padding: 10px 20px;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .nav-links a {
+    padding: 10px 0;
+  }
+
+  .dropdown-content {
+    position: static; /* important for mobile */
+    display: none;
+    background-color: #111;
+  }
+
+  .dropdown-content.show {
+    display: block;
+  }
 }

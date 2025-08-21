@@ -30,11 +30,17 @@
 
 <nav class="navbar">
   <div class="container">
+    <div class="navbar-mobile">
     <div class="navbar-logo">
       <a href="index.html">
         <img src="img/Logo.png" alt="Rajat Travel Logo">
       </a>
     </div>
+    <button class="menu-toggle" onclick="toggleMenu()">
+      <i class="fas fa-bars"></i>
+    </button>
+    </div>
+    <div class="nav-links">
     <a href="index.html">Home</a>
     <a href="about.html">About Us</a>
     
@@ -50,12 +56,14 @@
     </div>
 
     <a href="gallery.html">Gallery</a>
-    
     <a href="contact.html">Contact</a>
+
+    
+  </div>
   </div>
 </nav>
   <header class="hero">
-    <h1>Paragliding in Rishikesh</h1>
+    <h1><b>Paragliding in Rishikesh</b></h1>
     <p>Feel the thrill of flying over the majestic Ganges valley</p>
   </header>
 
@@ -217,6 +225,10 @@
       }
     }
   });
+
+  function toggleMenu() {
+  document.querySelector(".nav-links").classList.toggle("show");
+}
 </script>
 
 </body>
