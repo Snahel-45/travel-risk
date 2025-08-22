@@ -683,6 +683,10 @@ html,body{
   padding-bottom: 5px;
 }
 
+.footer-section p{ 
+  padding: 7px;
+}
+
 .footer-section h3::after {
   content: '';
   position: absolute;
@@ -2147,4 +2151,67 @@ p b:contains("₹") {
   .dropdown-content.show {
     display: block;
   }
+}
+
+
+/* Hotel Section */
+.hotel-section {
+  padding: 50px 20px;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+.hotel-section h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.hotel-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.hotel-card {
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.hotel-card:hover {
+  transform: translateY(-5px);
+}
+
+.hotel-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.hotel-card h3 {
+  margin: 10px 0;
+  color: #3a2ab9;
+}
+
+.hotel-card p {
+  color: #555;
+  font-size: 14px;
+}
+
+.btn {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background: #3a2ab9;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #2a1a99;
 }
