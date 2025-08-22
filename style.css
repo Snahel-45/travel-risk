@@ -933,7 +933,7 @@ html,body{
 }
 @media (max-width: 480px) {
   .about-image{
-  padding-top: 9px;
+  padding-top: 33px;
   border-radius: 30%;
   }
 }
