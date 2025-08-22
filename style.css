@@ -87,17 +87,17 @@ body {
   top: 40rem;
   text-align: center;
 } */
-header {
+/* header {
   padding-top: 100px;   
   text-align: center;
   background: url("img/Background.jpeg") no-repeat center center/cover; 
   color: white;
-  height: 700px;        /* full screen height */
+  height: 700px;        
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
+} */
 
 @media (max-width: 768px) {
   header{
@@ -398,7 +398,7 @@ main {
   margin-bottom: 1.5rem;
 } */
  /* ===== Hero Section ===== */
-.hero-section {
+.hero-section,header {
   background: url('img/Background.jpeg') no-repeat center center/cover;
   /* height: 100vh; */
   min-height: 100vh;
@@ -408,6 +408,9 @@ main {
   text-align: center;
   color: #fff;
   position: relative;
+  flex-direction: column;
+
+  
   
 }
 /* .hero, .hero-section {
@@ -448,7 +451,16 @@ main {
   font-size: 18px;
   line-height: 1.6;
 }
-
+@media (min-width: 766px){ 
+  .hero h1{
+  font-size: 48px;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+.hero p{
+  font-size: 30px;
+}
+}
 /* ===== Why Choose Us Section ===== */
 .why-choose-us {
   padding: 60px 20px;
