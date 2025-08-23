@@ -1,363 +1,548 @@
-<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css" />
-    <title>Rajat Tours&Travels | Best Reliable & Vehicle Rentals in Varanasi & Varanasi</title>
-    <meta name="description" content="Explore thrilling Reliables and vehicle rentals with Rajat Tours&Travels . Book paragliding, rafting, camping, and family tour vehicles in Varanasi & Varanasi.">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/dynamic.js"></script>
+    <title>Shree Siddhivinayak Jyotish</title>
+    <link rel="icon" type="image/x-icon" href="images/edgelogo.png">
+    <!-- Owl Carousel CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
 
-  </head>
-  <body>
+    <!-- jQuery (Required for Owl Carousel) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
-    <!-- ====== Top Bar ====== -->
-<div class="top-bar">
-  <div class="container">
-    <!-- Left: Contact Info -->
-    <div class="contact-info">
-      <span><i class="fas fa-phone"></i> <a href="tel:+91 9336911606">+91 9336911606</a></span>
-      <span><i class="fas fa-envelope"></i> <a href="mailto:rajatbahal@gmail.com">rajatbahal@gmail.com</a></span>
-    </div>
+    <!-- Owl Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-    <!-- Right: Social Icons -->
-    <div class="social-icons">
-      <a href="#"><i class="fab fa-facebook-f"></i></a>
-    
-</a>
-          
-      <a href="https://wa.me/919336911606" target="_blank">
-  <i class="fab fa-whatsapp"></i>
-</a>
-<a href="#">
-    <i class="fab fa-instagram"></i>
-  </a>
-  <a href="#" target="_blank">
-    <i class="fab fa-twitter"></i>
-  </a>
-    </div>
-  </div>
-</div>
-<!-- ====== End Top Bar ====== -->
+    <style>
+        @media(max-width: 1250px){
+            .gallerycol3{
+                width: auto !important;
+            }
+            .rotating-img{
+                margin-left: 0 !important;
+            }
+        }
+        .item .text-white{
+            text-transform: uppercase;
+        }
+        @media(max-width: 992px){
+            .bannerht{
+                height: 900px;
+            }
+            .rotating-img{
+                width: 200px;
+            }
+        }
+        .bannerht{
+            height: 740px;
+        }
+        @media(max-width: 960px){
+            .gallery3{
+                width: auto !important;
+                height: 28rem !important;
+            }
+            .carousel-inner{
+                max-height: 750px;
+            }
+            .carousel-inner img{
+                height: 500px !important;
+            }
+            .carousel-caption{
+                display: none;
+            }
+        }
+        @media(max-width: 560px){
+            .gallery3{
+                width: auto !important;
+                height: 38rem !important;
+            }
+            .carousel-inner{
+                max-height: 750px;
+            }
+            .carousel-inner img{
+                height: 400px !important;
+            }
+        }
+        @media(max-width: 450px){
+            .gallery3{
+                width: auto !important;
+                height: 48rem !important;
+            }
+        }
+        @media (max-width: 660px){
+            .heroimgbox {
+                min-width: 0 !important;
+            }
+            .favdesh1{
+                font-size: 35px;
+            }
+            .reservecon{
+                min-width: 280px !important;
+            }
+            .testimonialdiv{
+                width: 100% !important;
+            }
+            .minscreen{
+                overflow: hidden;
+            }
+            .attract{
+                min-width: 100% !important;
+            }
+        }
+        @media(max-width: 400px){
+            .reservecon{
+                min-width: 0px !important;
+            }
+            .carousel-inner{
+                max-height: 750px;
+            }
+            .carousel-inner img{
+                height: 300px;
+            }
+        }
+        .carousel-inner{
+            max-height: 750px;
+        }
+        .carousel-inner img{
+            height: 800px;
+        }
+        /* .carousel-item{
 
-   <nav class="navbar">
-  <div class="container">
-    <div class="navbar-mobile">
-    <div class="navbar-logo">
-    <img src="img/Logo.png" alt="Rajat Tours&Travels Logo">
-    <span class="brand-name">Rajat Tours&Travels
-
-    </span>
-</div>
-
-    <button class="menu-toggle" onclick="toggleMenu()">
-      <i class="fas fa-bars"></i>
-    </button>
-    </div>
-    <div class="nav-links">
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    
-    <div class="dropdown">
-      <a href="javascript:void(0)" class="dropbtn" onclick="toggleDropdown(this,event)">Packages <i class="fas fa-caret-down"></i></a>
-      <div class="dropdown-content">
-        <a href="varanashi_tour.html">Tour of varanasi </a>
-        <a href="kashi_pragraj.html">Tour of Kashi to Prayagraj </a>
-        <a href="pragraj_banaras.html">Tour of Prayagraj & varanasi</a>
-        <a href="pragaraj.html">Tour of Ayodhya & Prayagraj</a>
-        <a href="kashi.html">Tour of Kashi</a>
-      </div>
-    </div>
-    <a href="hotel-bookings.html">Book Hotels</a>
-    <a href="boat-booking.html" >Boat Ride</a>
-
-    <a href="gallery.html">Gallery</a>
-    <a href="contact.html">Contact</a>
-
-    
-  </div>
-  </div>
-</nav>
-
-
-    <main>
-      <section class="hero-section">
-  <div class="hero-content">
-    <h1>Welcome to <span>Rajat Tours&Travels</span></h1>
-    <p>Explore the world with our best tour packages. we specialize in curating spiritual, cultural, and Reliable journeys across India’s most divine destinations.</p>
-  </div>
-</section>
-    
-
-    <section class="why-choose-us">
-  <div class="container">
-    <h2>🌍 Why Choose Us?</h2>
-    <p class="intro-text">
-      We bring you the best travel experiences around the world. Whether you love beaches, mountains, or city life, our international holiday destinations include:
-    </p>
-
-    <div class="reasons">
-      <div class="reason-card">
-        <i class="fas fa-umbrella-beach"></i>
-        <h3>Reliable Travel Company</h3>
-        <p>Best Travel Agencies in India That Will Make Trip Planning a Take Walk For You.</p>
-      </div>
-
-      <div class="reason-card">
-        <i class="fas fa-water"></i>
-        <h3>Secured</h3>
-        <p>Best Travel Agencies in India That Will Make Trip Planning a Take Walk For You.</p>
-      </div>
-
-      <div class="reason-card">
-        <i class="fas fa-city"></i>
-        <h3>24/7 Customer Support</h3>
-        <p>All time Aveliable & Quality Tours Work With Experts.</p>
-      </div>
-
-      <div class="reason-card">
-        <i class="fas fa-city"></i>
-        <h3>25 Years of Experience</h3>
-        <p>Experience in This Field.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="about-section">
-  <div class="about-container1">
-    <h2><i class="fas fa-info-circle"></i> About Us</h2>
-    <p><strong class="highlight">Rajat Tours & Travels</strong> we don’t just plan trips, we create experiences that stay with you for a lifetime.</p>
-    
-    <p>Based in Varanasi, Uttar Pradesh, we specialize in curating spiritual, cultural, and Reliable journeys across India’s most divine destinations — Varanasi, Prayagraj, Ayodhya, Chitrakoot, Vindhyachal, and beyond.</p>
-    
-    <p>With years of experience in the travel industry, our mission is to provide travelers with safe, comfortable, and memorable journeys. Whether you’re seeking sacred pilgrimages, boat rides on the Ganga, family holiday packages, or Reliable activities in Varanasi, we are here to make your travel seamless.</p>
-    
-    <p class="launch-note">🚀 Our services were launched in <strong>2000</strong>, and we continue to grow as one of the most trusted Reliable brands in Varanasi</p>
-  </div>
-</section>
-
-
-
-  <div class="section">
-  <h2>&#9992; Tourist Favourite Destinations</h2>
-  <div class="slider-container">
-    <button class="arrow left">&#10094;</button>
-    <div class="slider">
-      <div class="card">
-        <img src="img/Ram_Mandir1.avif" alt="Ram_Mandir">
-        <h3> Shri Ram Janmabhoomi Teerth Kshetra</h3>
-        <p>Ram Lala, in his 5-year-old form, the main deity of the temple</p>
-      </div>
-      <div class="card">
-        <img src="img/kashi.jpeg" alt="Manali">
-        <h3>The Kashi Vishwanath Temple- Varanasi</h3>
-        <p>Snow-capped peaks, lush valleys, Reliable sports, and serene beauty.</p>
-      </div>
-      <div class="card">
-        <img src="img/prayagraj1.webp" alt="Agra">
-        <h3>Prayagraj - the Kumbh Mela</h3>
-        <p>Rich history, Mughal architecture, and timeless cultural heritage.</p>
-      </div>
-      <div class="card">
-        <img src="img/vindhyavasini-mandir.webp" alt="Nivasini Mandir">
-        <h3>Vindhyavasini Devi Temple -Nivasini Mandir</h3>
-        <p>one of the most revered Shakti Peethas in India</p>
-      </div>
-    </div>
-    <button class="arrow right">&#10095;</button>
-  </div>
-</div>
-
-   
-    
-  <div class="section">
-  <h2>&#x1F697; Vehicles We Offer</h2>
-  <div class="slider-container">
-  <button class="arrow left">&#10094;</button>
-    <div class="slider">
-      <div class="card">
-        <img src="img/Boat-ride-in-prayagraj 2.webp" alt="boat">
-        <h3>Enjoy Sunset/ Sunrise in Ganga </h3>
-        <p>Available Now</p>
-      </div>
-      <div class="card">
-        <img src="img/Luxury-Boat-Rides.webp" alt="Boat">
-        <h3>Full Family with Luxury Boat</h3>
-        <p>Available Now</p>
-      </div>
-      <div class="card">
-        <img src="img/traveler1.jpg" alt="Modified Urbania">
-        <h3>20 Seater Modified Traveller</h3>
-        <p>Available Now</p>
-      </div>
-      <div class="card">
-        <img src="img/car 5 seat.jpg" alt="Innova Crysta">
-        <h3> 5-7 Seater Family Car</h3>
-        <p>Available Now</p>
-      </div>
-      <div class="card">
-        <img src="img/bus last.jpg" alt="Tempo Traveller">
-        <h3>26 Seater Traveller Bus</h3>
-        <p>Available Now</p>
-      </div>
-    </div>
-  <button class="arrow right">&#10095;</button>
-</div>
-</div>
-
-<section class="testimonials">
-  <h2>Testimonials</h2>
-  <div class="testimonial-row">
-    <div class="testimonial-track">
-      <div class="card">
-        <img src="img/testimoni.jpg" alt="Rajesh Malhotra">
-        <h3>Rajesh Malhotra</h3>
-        <p class="quote">"We booked the 20-seater tempo traveller for a wedding. Everything was smooth."</p>
-        <div class="stars">★★★★☆</div>
-      </div>
-      <div class="card">
-        <img src="img/testimoni2.jpg" alt="Sonal Jain">
-        <h3>Sonal Jain</h3>
-        <p class="quote">"Affordable pricing and well-maintained vehicles. Definitely booking again!"</p>
-        <div class="stars">★★★★★</div>
-      </div>
-      <div class="card">
-        <img src="img/testimoni3.jpeg" alt="Amit Roy">
-        <h3>Amit Roy</h3>
-        <p class="quote">"Great experience with their 17-seater Urbania. Clean, comfortable, and timely!"</p>
-        <div class="stars">★★★★★</div>
-      </div>
-      <div class="card">
-        <img src="img/https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthKckH_epVdiL9zthxF6lTCWw8fAnIL5fcg&s" alt="Anita Sharma">
-        <h3>Anita Sharma</h3>
-        <p class="quote">"Prompt service and courteous drivers. Our trip to Haridwar was wonderful."</p>
-        <div class="stars">★★★★☆</div>
-      </div>
-      <div class="card">
-        <img src="img/https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPm3UpYYfXC7rW1AnNIqDI6VxCXjJmxJf51Q&s" alt="Dev Mehra">
-        <h3>Dev Mehra</h3>
-        <p class="quote">"Perfect family vacation van. Reliable and safe. Will definitely use again."</p>
-        <div class="stars">★★★★★</div>
-      </div>
-      
-    </div>
-  </div>
-</section>
-
-<section class="contact-section">
-  <div class="container">
-    <h2>📩 Get in Touch / Any Query</h2>
-    <p>We’d love to hear from you! Fill out the form below or contact us directly.</p>
-
-    <div class="contact-grid">
-      <!-- Contact Form -->
-      <form class="contact-form">
-        <div class="form-group">
-          <input type="text" placeholder="Your Name" required />
-        </div>
-        <div class="form-group">
-          <input type="email" placeholder="Your Email" required />
-        </div>
-        <div class="form-group">
-          <input type="tel" placeholder="Your Phone" />
-        </div>
-        <div class="form-group">
-          <textarea placeholder="Your Message" rows="5" required></textarea>
-        </div>
-        <button type="submit" class="btn">Send Message</button>
-      </form>
-   </div>
-  </div>
-</section>
-
-
-    <footer class="site-footer">
-  <div class="footer-container">
-    
-    <div class="footer-section">
-      <h3>Rajat Tours&Travels</h3>
-      <p>rajatbahal@gmail.com</p>
-      <p>Registered office:
-      S21/122 ,subhash nagar colony parade kothi road near panchvati mandir maldahiya</p>
-    </div>
-
-    
-    <div class="footer-section">
-      <h3>Packages</h3>
-      <ul class="footer-links">
-         <li><a href="varanashi_tour.html">Tour of varanasi </a></li>
-        <li><a href="kashi_pragraj.html">Tour of Kashi to Prayagraj</a></li>
-        <li><a href="pragraj_banaras.html">Tour of Prayagraj & varanasi</a></li>
-        <li><a href="pragaraj.html">Tour of Ayodhya & Prayagraj</a></li>
-        <li><a href="kashi.html">Tour of Kashi</a></li>
-        <li><a href="hotel-bookings.html">Hotel Bookings</a></li>
-        <li><a href="boat-booking.html">Boat Trip</a></li>
-      </ul>
-    </div>
-
-    
-    <div class="footer-section">
-      <h3>Quick Links</h3>
-      <ul class="footer-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Gallery</a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="#">Terms & Conditions</a></li>
-      </ul>
-    </div>
-
-    
-    <div class="footer-section">
-      <h3>Location</h3>
-      <h5> Varanasi, Uttar Pradesh</h5>
-      </div>
-    </div>
-  </div>
-
-  <div class="footer-bottom">
-    <p>&copy; 2025 Dream Travel Tours. All rights reserved.</p>
-  </div>
-</footer>
-<script src="script.js"></script>
-<script>
-  function toggleDropdown(el, event) {
-    if (window.innerWidth <= 768) {
-      event.preventDefault();     // stop link jump
-      event.stopPropagation();    // stop bubbling
-
-      const dropdown = el.nextElementSibling;
-      const isOpen = dropdown.classList.contains("show");
-
-      // Close all menus
-      document.querySelectorAll(".dropdown-content").forEach(menu => {
-        menu.classList.remove("show");
-      });
-
-      // If not already open → open it
-      if (!isOpen) {
-        dropdown.classList.add("show");
-      }
+        } */
+    .owl-carousel .owl-item img {
+        height: auto;
     }
-  }
+    .imgbox .text-center .pricedisplay{
+        display: none;
+    }
+    .imgbox p{
+        text-transform: capitalize;
+    }
+    .item img{
+        height: auto !important;
+        /* max-height: 500px; */
+    }
+    .bg-orange {
+        background-color: #ec6901;
+        }
+        .object-fit-cover {
+        object-fit: cover;
+        height: 100%;
+        }
+    @keyframes rotateLoop {
+        0%   { transform: rotate(0deg); }
+        /* 10%  { transform: rotate(45deg); }   
+        20%  { transform: rotate(90deg); }  
+        30%  { transform: rotate(135deg); }   
+        40%  { transform: rotate(180deg); }  
+        50%  { transform: rotate(225deg); }   
+        60%  { transform: rotate(270deg); }  
+        70%  { transform: rotate(315deg); }   
+        80%  { transform: rotate(360deg); } */
+        90%  { transform: rotate(360deg); }  
+        100% { transform: rotate(0deg); }    /* Reset */
+        }
 
-  // Close dropdowns if clicked outside
-  document.addEventListener("click", function (e) {
-    if (window.innerWidth <= 768) {
-      if (!e.target.closest(".dropdown")) {
-        document.querySelectorAll(".dropdown-content").forEach(menu => {
-          menu.classList.remove("show");
+        .rotating-img {
+        animation: rotateLoop 10s infinite ease-in-out;
+        box-shadow: inset 0 0 100px 100px white;
+        border-radius: 50%;
+        margin-left: 200px;
+        }
+
+    </style>
+</head>
+<body>
+    <section class="minscreen">
+        <header id="theader" class="w-100 fixed-top"></header>
+        <section class="hero pt-0 pb-0 w-100 position-relative mb-0" style="background-color: #fdf8f4;">
+            <section class="bannerht" style="background: url('images/astrobanner.jpg'); background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover; padding: 6rem 0;">
+                <div class="container mt-4" style="display: flex; align-items: center; flex-wrap: wrap;">
+                    
+                    <!-- Left Text Section -->
+                    <div class="mt-5" style="flex: 1; min-width: 300px;">
+                    <p style="color: #f26522; font-weight: bold; letter-spacing: 1px;">ASK ONE QUESTION FOR FREE</p>
+                    <h1 class="my-5 text-white translatable" style="font-size: 3rem; font-weight: bold; color: #1c1c1c; line-height: 1.2;">
+                        Learn more about <br> your destiny
+                    </h1>
+                    <p class="my-5 text-warning shadow translatable" style="color: #555; margin-top: 1rem;">
+                        Fusce sit amet velit eleifend, iaculis velit quis, malesuada lacus.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                    <button class="translatable" style="margin-top: 1.5rem; background-color: #f26522; color: #fff; padding: 0.75rem 2rem; border: none; border-radius: 4px; font-weight: bold;">
+                        Get started
+                    </button>
+                    </div>
+
+                    <!-- Right Rotating Image -->
+                    <div class="mt-5" style="flex: 1; text-align: center; min-width: 300px; position: relative;">
+                    <img src="https://mysta.peerduck.com/wp-content/uploads/2022/01/astrology-circle-orance-dots-1536x1536.png" alt="Astrology Circle" class="rotating-img" style="max-width: 450px; width: 100%;">
+                    </div>
+
+                </div>
+            </section>
+            <section class="w-100" style="background-color: #fdf8f4; padding: 0rem 0;">
+                <div class="container-fluid w-100" style="display: flex; justify-content: space-around; flex-wrap: wrap; gap: 2rem; background: url('https://mysta.peerduck.com/wp-content/uploads/2022/01/astrology-bg.png'); background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover; padding: 4rem 0;">
+
+                    <!-- Feature 1 -->
+                    <div style="flex: 1; min-width: 250px; text-align: center;">
+                    <img src="https://mysta.peerduck.com/wp-content/uploads/2022/01/icon-1@2x.png" alt="Privacy" style="width: 80px; height: 80px; border-radius: 50%; background-color: #111; padding: 10px;">
+                    <h3 style="margin-top: 1rem; font-size: 1.25rem; font-weight: bold; color: #1c1c1c;" class="translatable">Privacy</h3>
+                    <p style="color: #555;" class="translatable">Information obtained during the consultation is private.</p>
+                    </div>
+
+                    <!-- Feature 2 -->
+                    <div style="flex: 1; min-width: 250px; text-align: center;">
+                    <img src="https://mysta.peerduck.com/wp-content/uploads/2022/01/icon-1@2x.png" alt="Result Guarantee" style="width: 80px; height: 80px; border-radius: 50%; background-color: #111; padding: 10px;">
+                    <h3 style="margin-top: 1rem; font-size: 1.25rem; font-weight: bold; color: #1c1c1c;" class="translatable">Result guarantee</h3>
+                    <p style="color: #555;" class="translatable">We provide a guaranteed 100% result</p>
+                    </div>
+
+                    <!-- Feature 3 -->
+                    <div style="flex: 1; min-width: 250px; text-align: center;">
+                    <img src="https://mysta.peerduck.com/wp-content/uploads/2022/01/icon-1@2x.png" alt="Competence" style="width: 80px; height: 80px; border-radius: 50%; background-color: #111; padding: 10px;">
+                    <h3 style="margin-top: 1rem; font-size: 1.25rem; font-weight: bold; color: #1c1c1c;" class="translatable">Competence</h3>
+                    <p style="color: #555;" class="translatable">We only take on issues that we can solve</p>
+                    </div>
+
+                </div>
+            </section>
+
+
+
+
+
+            <!-- Orange Border Decoration -->
+            <!-- <div class="position-absolute bottom-0 start-50 w-50 text-center mx-auto" style="border-bottom: 2px solid #f26522;"></div>
+            <div class="position-absolute bottom-0 start-0 w-50 text-center mx-auto" style="border-bottom: 3px solid #12cef0;"></div> -->
+        </section>
+
+        <section class="py-0 pt-0" style="background-color: #faf6f1;">
+            <div class="container-fluid py-5" style="background: url('https://mysta.peerduck.com/wp-content/uploads/2022/01/astrology-bg.png'); background-attachment: fixed;">
+                <div class="row align-items-center">
+                
+                <!-- Left Image -->
+                <div class="col-md-6 text-center mb-4 mb-md-0">
+                    <img src="https://mysta.peerduck.com/wp-content/uploads/2022/01/hands-1268x1536.png" alt="Astrology Illustration" class="img-fluid" style="max-height: 400px;">
+                </div>
+
+                <!-- Right Text -->
+                <div class="col-md-6">
+                    <h6 class="text-uppercase fw-bold mb-3 translatable" style="color: #e2764e;">What We Do</h6>
+                    <h2 class="fw-bold mb-4 translatable" style="font-family: 'Georgia', serif;">We know everything about astrology</h2>
+                    <p class="text-muted mb-4 translatable">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mi tellus, pulvinar vel tempus eget, finibus vitae ante. Fusce sit amet velit eleifend, iaculis velit quis, malesuada lacus. Vestibulum sodales magna a volutpat tempus. Mauris vestibulum id urna viverra ultrices. Nullam rhoncus elit eget libero varius dapibus.
+                    </p>
+                    <a href="#" class="btn btn-lg fw-bold text-white translatable" style="background-color: #ff4500;">Get started</a>
+                </div>
+
+                </div>
+            </div>
+        </section>
+
+
+<!-- Owl Carousel CSS -->
+
+
+        <section class="pt-0 w-100" style="background-color: #faf6f1;">
+            <div class="container-fluid pt-0 text-center" style="background: url('https://mysta.peerduck.com/wp-content/uploads/2022/01/astrology-bg.png'); background-attachment: fixed;">
+                <!-- <h3 class="fw-bold mb-5 text-center">Top Dishes Near You</h3> -->
+                <div class="owl-carousel owl-theme mx-auto py-3" style="width: 80%;">
+                
+                <!-- Item 1 -->
+                <div class="item text-center">
+                    <img src="https://mysta.peerduck.com/wp-content/uploads/2022/01/gemini-300x300.png" alt="Dish 1" class="img-fluid rounded">
+                    <!-- <h5 class="mt-3">Dish Name 1</h5> -->
+                </div>
+
+                <div class="item text-center">
+                    <img src="https://mysta.peerduck.com/wp-content/uploads/2022/01/cancer-300x300.png" alt="Dish 1" class="img-fluid rounded">
+                    <!-- <h5 class="mt-3">Dish Name 1</h5> -->
+                </div>
+
+                <div class="item text-center">
+                    <img src="https://mysta.peerduck.com/wp-content/uploads/2022/01/sagittarius-300x300.png" alt="Dish 1" class="img-fluid rounded">
+                    <!-- <h5 class="mt-3">Dish Name 1</h5> -->
+                </div>
+
+                <!-- Item 2 -->
+                <div class="item text-center">
+                    <img src="https://mysta.peerduck.com/wp-content/uploads/2022/01/aries-300x300.png" alt="Dish 2" class="img-fluid rounded">
+                    <!-- <h5 class="mt-3">Dish Name 2</h5> -->
+                </div>
+
+                <!-- Item 3 -->
+                <div class="item text-center">
+                    <img src="https://mysta.peerduck.com/wp-content/uploads/2022/01/scorpio-300x300.png" alt="Dish 3" class="img-fluid rounded">
+                    <!-- <h5 class="mt-3">Dish Name 3</h5> -->
+                </div>
+
+                <div class="item text-center">
+                    <img src="https://mysta.peerduck.com/wp-content/uploads/2022/01/tarius-300x300.png" alt="Dish 3" class="img-fluid rounded">
+                    <!-- <h5 class="mt-3">Dish Name 3</h5> -->
+                </div>
+
+                <div class="item text-center">
+                    <img src="https://mysta.peerduck.com/wp-content/uploads/2022/01/aquarius-300x300.png" alt="Dish 3" class="img-fluid rounded">
+                    <!-- <h5 class="mt-3">Dish Name 3</h5> -->
+                </div>
+
+                <!-- Add more items as needed -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Owl Carousel JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+        <script>
+        $(document).ready(function(){
+            $(".owl-carousel").owlCarousel({
+            loop: true,
+            margin: 15,
+            autoplay: true,
+            autoplayTimeout: 2000, // 2 seconds
+            autoplayHoverPause: true,
+            responsive: {
+                0: { items: 1 },
+                576: { items: 2 },
+                768: { items: 4 },
+                992: { items: 8 }
+            }
+            });
         });
-      }
-    }
-  });
+        </script>
 
-  function toggleMenu() {
-  document.querySelector(".nav-links").classList.toggle("show");
-}
+<!-- Services Section -->
+        <section class="py-5 text-light w-100" style="background-color:#1b1b2f;">
+        <div class="container text-center">
+            
+            <!-- Icon + Subtitle -->
+            <div class="mb-3">
+            <span class="fs-1">⭐</span>
+            </div>
+            <h6 class="text-uppercase fw-bold" style="color:#e68b7f;">Our Services</h6>
+            <h2 class="fw-bold mb-5 translatable">Astrology is just a finger<br>pointing at reality</h2>
+            
+            <!-- Services Cards -->
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="p-4 h-100 border rounded-3" style="background-color:#22223b;">
+                    <div class="mb-3">
+                        <img src="https://mysta.peerduck.com/wp-content/uploads/2022/01/services-4@2x.png" alt="General consultation" width="60">
+                    </div>
+                    <h5 class="fw-bold translatable">General consultation</h5>
+                    <p class="text-success translatable">
+                        Astrology is one of the earliest attempts made by man to find the order 
+                        hidden behind or within the confusing and apparent chaos that exists in the world.
+                    </p>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="p-4 h-100 border rounded-3" style="background-color:#22223b;">
+                    <div class="mb-3">
+                        <img src="https://mysta.peerduck.com/wp-content/uploads/2022/01/services-4@2x.png" alt="Personal life advice" width="60">
+                    </div>
+                    <h5 class="fw-bold translatable">Personal life advice</h5>
+                    <p class="text-primary translatable">
+                        Astrology is one of the earliest attempts made by man to find the order 
+                        hidden behind or within the confusing and apparent chaos that exists in the world.
+                    </p>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="p-4 h-100 border rounded-3" style="background-color:#22223b;">
+                    <div class="mb-3">
+                        <img src="https://mysta.peerduck.com/wp-content/uploads/2022/01/services-4@2x.png" alt="Annual forecast" width="60">
+                    </div>
+                    <h5 class="fw-bold translatable">Annual forecast</h5>
+                    <p class="text-warning translatable">
+                        Astrology is one of the earliest attempts made by man to find the order 
+                        hidden behind or within the confusing and apparent chaos that exists in the world.
+                    </p>
+                    </div>
+                </div>
+                    <div class="col-md-4">
+                    <div class="p-4 h-100 border rounded-3" style="background-color:#22223b;">
+                    <div class="mb-3">
+                        <img src="https://mysta.peerduck.com/wp-content/uploads/2022/01/services-4@2x.png" alt="General consultation" width="60">
+                    </div>
+                    <h5 class="fw-bold translatable">General consultation</h5>
+                    <p class="text-success translatable">
+                        Astrology is one of the earliest attempts made by man to find the order 
+                        hidden behind or within the confusing and apparent chaos that exists in the world.
+                    </p>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="p-4 h-100 border rounded-3" style="background-color:#22223b;">
+                    <div class="mb-3">
+                        <img src="https://mysta.peerduck.com/wp-content/uploads/2022/01/services-4@2x.png" alt="Personal life advice" width="60">
+                    </div>
+                    <h5 class="fw-bold translatable">Personal life advice</h5>
+                    <p class="text-primary translatable">
+                        Astrology is one of the earliest attempts made by man to find the order 
+                        hidden behind or within the confusing and apparent chaos that exists in the world.
+                    </p>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="p-4 h-100 border rounded-3" style="background-color:#22223b;">
+                    <div class="mb-3">
+                        <img src="https://mysta.peerduck.com/wp-content/uploads/2022/01/services-4@2x.png" alt="Annual forecast" width="60">
+                    </div>
+                    <h5 class="fw-bold translatable">Annual forecast</h5>
+                    <p class="text-warning translatable">
+                        Astrology is one of the earliest attempts made by man to find the order 
+                        hidden behind or within the confusing and apparent chaos that exists in the world.
+                    </p>
+                    </div>
+                </div>
+            </div>
+            
+            
+        </div>
+        </section>
+<!-- Tarot Section -->
+        <section class="py-0 w-100" style="background-color:#faf6f3;">
+        <div class="container-fluid py-5" style="background: url('https://mysta.peerduck.com/wp-content/uploads/2022/01/astrology-bg.png'); background-attachment: fixed;">
+            <div class="row align-items-center g-5">
+            
+            <!-- Left Image -->
+            <div class="col-lg-6 text-center">
+                <img src="https://mysta.peerduck.com/wp-content/uploads/2022/01/tarot-consultation.png" alt="Tarot Cards" class="img-fluid">
+            </div>
+            
+            <!-- Right Content -->
+            <div class="col-lg-6">
+                <h6 class="text-uppercase fw-bold mb-3" style="color:#e68b7f;">Other Services</h6>
+                <h2 class="fw-bold mb-4 translatable">Tarot consultations<br>on various topics</h2>
+                <p class="text-muted mb-4 translatable">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mi tellus, 
+                pulvinar vel tempus eget, finibus vitae ante. Fusce sit amet velit eleifend, 
+                iaculis velit quis, malesuada lacus. Vestibulum sodales magna a volutpat tempus. 
+                Mauris vestibulum id urna viverra ultrices. Nullam rhoncus elit eget libero 
+                varius dapibus.
+                </p>
+                <a href="#" class="fw-bold translatable" style="color:#e68b7f; text-decoration:none;">
+                Learn more
+                </a>
+                <div style="border-bottom:2px solid #e68b7f; width:100px; margin-top:4px;"></div>
+            </div>
+            
+            </div>
+        </div>
+        </section>
+<!-- Hero CTA Section -->
+        <section class="py-0 w-100" style="background-color:#1c1b29; color:#fff; position:relative; overflow:hidden;">
+        <div class="container-fluid py-5" style="background: url('https://mysta.peerduck.com/wp-content/uploads/2022/01/astrology-bg.png'); background-attachment: fixed;">
+            <div class="row align-items-center">
+            
+            <!-- Left Image -->
+            <div class="col-lg-6 text-center mb-4 mb-lg-0">
+                <img src="https://mysta.peerduck.com/wp-content/uploads/2022/01/planets-2-1.png" alt="Moon and Stars" class="img-fluid">
+            </div>
+            
+            <!-- Right Content -->
+            <div class="col-lg-6">
+                <h2 class="fw-bold mb-3 translatable">Get an answer to one question<br>for free</h2>
+                <p class="mb-4 text-light translatable">
+                Your path is illuminated by a road-map of stars. I am here to guide you!
+                </p>
+                <a href="#" class="btn btn-lg px-4 translatable" 
+                style="background:linear-gradient(90deg,#ff4d00,#ff7300); color:#fff; font-weight:bold;">
+                Get started
+                </a>
+            </div>
+            
+            </div>
+        </div>
+        </section>
+
+
+
+
+
+
+        <footer id="tfooter" class="w-100"></footer>
+    </section>
+</body>
+<script>
+    loadHTML('header.html', 'theader');
+    // loadHTML('body.html', 'tbody');
+    loadHTML('footer.html', 'tfooter');
+</script>
+<script>
+document.getElementById("careerForm").addEventListener("submit", function(e){
+  e.preventDefault();
+
+  // Replace with your WhatsApp number (with country code, no +)
+  var phone = "919051972409";
+
+  var name = document.getElementById("name").value;
+  var email = document.getElementById("email").value;
+  var phoneInput = document.getElementById("phone").value;
+  var position = document.getElementById("position").value;
+  var message = document.getElementById("message").value;
+
+  var whatsappMessage = `Career Application%0A----------------------%0AName: ${name}%0AEmail: ${email}%0APhone: ${phoneInput}%0APosition: ${position}%0AMessage: ${message}`;
+
+  var url = `https://wa.me/${phone}?text=${whatsappMessage}`;
+  window.open(url, "_blank");
+});
 </script>
 
-</body>
-</html>
+<script>
+    $(document).ready(function(){
+        $(".owl-carousel").owlCarousel({
+            loop: true,               // Infinite loop
+            margin: 20,               // Space between items
+            nav: false,                // Show navigation arrows
+            autoplay: true,           // Enable autoplay
+            autoplayTimeout: 2500,    // Time between slides (2000ms = 2s)
+            autoplayHoverPause: true,
+            rtl: false,
+            responsive: {
+                0: { items: 1 },      // 1 item on small screens
+                600: { items: 2 },    // 2 items on medium screens
+                800: { items: 3 },
+                1000: { items: 4 },    // 3 items on large screens
+            }
+        });
+    });
+    $(window).on("load", function() {
+        setTimeout(function() {
+            $(".owl-carousel").trigger("refresh.owl.carousel");
+        }, 100);
+    });
 
+    function updateBeforeContent(selector, text) {
+        document.querySelector(selector).style.setProperty('--content', `"${text}"`);
+    }
+
+    // Example: Update the content dynamically
+    updateBeforeContent('.favdes .ib1', 'Kashmir – Paradise on Earth, with scenic valleys, serene lakes, snowy peaks, and rich culture.');
+    updateBeforeContent('.favdes .ib2', 'Manali – A Himalayan paradise with snow-capped peaks, lush valleys, adventure sports, and serene beauty.');
+    updateBeforeContent('.favdes .ib3', 'Agra – Home to the iconic Taj Mahal, rich history, Mughal architecture, and timeless cultural heritage.');
+    updateBeforeContent('.favdes .ib4', 'Jaipur – The Pink City of royal palaces, vibrant culture, majestic forts, and rich heritage.');
+
+    </script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init(); // Initialize AOS
+    </script>
+
+</html>
