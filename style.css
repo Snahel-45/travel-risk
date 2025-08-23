@@ -951,6 +951,12 @@ html,body{
   padding-top: 33px;
   border-radius: 30%;
   }
+  .about-image img {
+            width: 80%;
+            height: auto;
+            display: block;
+            transition: transform 0.5s ease;
+}
 }
 
 
@@ -2677,4 +2683,15 @@ p b:contains("₹") {
 
 .package-card .btn:hover {
   background: #d2691e;
+}
+
+@media (max-width: 600px) {
+  .about-image {
+    min-width: 100%;   /* no fixed 380px */
+    height: auto;
+    border-radius: 20px;
+  }
+  .about-image img {
+    width: 100%;
+    height: auto;}
 }
