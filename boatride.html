@@ -1,0 +1,414 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+
+    <!-- jQuery (Required for Owl Carousel) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Owl Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="js/dynamic.js"></script>
+    <title>Rajat Tours&Travels</title>
+    <link rel="icon" type="image/x-icon" href="images/logo.ico">
+    <!-- Owl Carousel CSS -->
+    
+    <style>
+        @media(max-width: 1250px){
+            .gallerycol3{
+                width: auto !important;
+            }
+        }
+        @media(max-width: 960px){
+            .gallery3{
+                width: auto !important;
+                height: 28rem !important;
+            }
+            .carousel-inner{
+                max-height: 750px;
+            }
+            .carousel-inner img{
+                height: 500px !important;
+            }
+            .carousel-caption{
+                display: none;
+            }
+        }
+        @media(max-width: 560px){
+            .gallery3{
+                width: auto !important;
+                height: 38rem !important;
+            }
+            .carousel-inner{
+                max-height: 750px;
+            }
+            .carousel-inner img{
+                height: 400px !important;
+            }
+        }
+        @media(max-width: 450px){
+            .gallery3{
+                width: auto !important;
+                height: 48rem !important;
+            }
+        }
+        @media (max-width: 660px){
+            .heroimgbox {
+                min-width: 0 !important;
+            }
+            .favdesh1{
+                font-size: 35px;
+            }
+            .reservecon{
+                min-width: 280px !important;
+            }
+            .testimonialdiv{
+                width: 100% !important;
+            }
+            .minscreen{
+                overflow: hidden;
+            }
+            .attract{
+                min-width: 100% !important;
+            }
+        }
+        @media(max-width: 400px){
+            .reservecon{
+                min-width: 0px !important;
+            }
+            .carousel-inner{
+                max-height: 750px;
+            }
+            .carousel-inner img{
+                height: 300px;
+            }
+        }
+        .carousel-inner{
+            max-height: 750px;
+        }
+        .carousel-inner img{
+            height: 800px;
+        }
+        /* .carousel-item{
+
+        } */
+    .owl-carousel .owl-item img {
+        height: 220px;
+    }
+    .imgbox .text-center .pricedisplay{
+        display: none;
+    }
+    .imgbox p{
+        text-transform: capitalize;
+    }
+    .item img{
+        height: 600px !important;
+        /* max-height: 500px; */
+    }
+
+    /* ================================
+   Boat Packages & Types Section
+================================= */
+
+.boats, .boat-types {
+  padding: 60px 20px;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+.boats h2, .boat-types h2 {
+  font-size: 2rem;
+  color: #222;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.boats h2::after, .boat-types h2::after {
+  content: "";
+  width: 80px;
+  height: 3px;
+  background: #ff6600;
+  display: block;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+.boat-types .intro-text {
+  max-width: 700px;
+  margin: 0 auto 40px;
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.6;
+}
+
+/* Card Grid Layout */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
+
+/* Card Design */
+.card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 5px 18px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding-bottom: 20px;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card h3 {
+  font-size: 1.3rem;
+  margin: 15px 0 8px;
+  color: #333;
+}
+
+.card p {
+  font-size: 0.95rem;
+  color: #555;
+  margin: 5px 15px;
+}
+
+.card strong {
+  color: #e63946;
+}
+
+/* Buttons */
+.card .btn {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 10px 18px;
+  background: #ff6600;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 25px;
+  transition: background 0.3s ease;
+}
+
+.card .btn:hover {
+  background: #e65100;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .boats h2, .boat-types h2 {
+    font-size: 1.6rem;
+  }
+
+  .card img {
+    height: 180px;
+  }
+}
+
+    </style>
+</head>
+<body>
+    <section class="minscreen">
+        <header id="theader" class="w-100 fixed-top"></header>
+        <!-- <section class="hero p-5 pb-2 w-100 bg-white">
+            <section class="row mt-5 pt-4 d-flex herocon">
+                <div class="col-lg-6 mt-5 p-4 pl-5">
+                    <p class="herop px-3 fw-bold mt-4"><i class="fa-solid fa-plane fa-rotate-by" style="--fa-rotate-angle: -45deg;"></i> &nbsp &nbsp Explore the wonderful places!</p>
+                    <h1 class="heroh1 mt-4 px-2">Vacation &&nbspenjoy <span style="color: var(--theme-blue);">new places</span> in the World <img src="https://media.istockphoto.com/id/914505568/vector/people-on-a-desert-island-a-cry-for-help.jpg?s=612x612&w=0&k=20&c=_EBrWJV5D-9Rmej6qq7Ld1qYjcJTWkFZWvgltMC5Bz8=" alt="" height="70"></h1>
+                    <p class="herotext mt-4 px-3">Destinize membuat kamu selalu update terkait tempat liburan baru di Indonesia dengan mengikuti perkembangan para influencer di sosial media ✨</p>
+                    <span>
+                        <button class="mt-4 mx-5 herobtn">Explore Us &nbsp&nbsp<i class="fa-solid fa-arrow-right-long"></i></button>
+                        <button class="rounded-5 playbtn"><i class="fa-solid fa-play"></i></button> <span class="fw-bold" style="color: var(--theme-darksilver);">&nbsp&nbspView Demo</span>
+                    </span>
+                </div>
+                <div class="col-lg-6 mt-5">
+                    <div class="heroimgbox">
+                        <img src="images/heroimg.png" alt="">
+                    </div>
+                </div>
+            </section>
+        </section> -->
+        <section class="hero py-5 pb-3 w-100 mt-0" style="background: url('https://res.cloudinary.com/kmadmin/image/upload/v1702920274/kiomoi/Ayodhya-6-01-final-1024x626_3079.jpg');background-attachment: fixed; background-repeat: no-repeat; background-size: cover; background-position: center;"> <!-- Midnight Blue -->
+        <div class="container text-center text-white py-5">
+            <h1 class="display-4 fw-bold mt-5">🚤 Boat Rides on the Ganga</h1>
+            <p class="lead mt-3 mb-4"><a href="index.html" class="text-warning">Home</a> <i class="fa-solid fa-angles-right"></i> Boat Ride</p>
+            <!-- <a href="#about" class="btn btn-outline-light px-4 me-3">Learn More</a> -->
+            <!-- <a href="#contact" class="btn btn-light px-4">Contact Us</a> -->
+        </div>
+        </section>
+
+        <section class="py-5 bg-white w-100">
+        <div class="container">
+            <div class="row align-items-center">
+            <!-- Image Column -->
+            <!-- <div class="col-lg-6 mb-4 mb-lg-0 text-center">
+                <img src="img/Varanasi about.jpg" alt="Team" class="img-fluid shadow rounded-1">
+            </div> -->
+
+            <!-- Text Column -->
+             <section class="boats">
+    <div class="container">
+      <h2>Our Boat Ride Packages</h2>
+      <div class="card-grid">
+
+        <div class="card">
+          <img src="img/Boat-ride-in-prayagraj 2.webp" alt="Sunrise Boat Ride">
+          <h3>🌅 Sunrise Boat Ride</h3>
+          <p>Witness the magical sunrise on the holy Ganga in Varanasi or Prayagraj.</p>
+          <p><strong>₹800 per person</strong></p>
+          <a href="https://wa.me/919336911606?text=I%20want%20to%20book%20a%20Sunrise%20Boat%20Ride" class="btn">Book Now</a>
+        </div>
+
+        <div class="card">
+          <img src="img/sunset_boat.jpg" alt="Sunset Boat Ride">
+          <h3>🌇 Sunset Boat Ride</h3>
+          <p>Enjoy the serene beauty of the Ganga as the sun sets beyond the ghats.</p>
+          <p><strong>₹1000 per person</strong></p>
+          <a href="https://wa.me/919336911606?text=I%20want%20to%20book%20a%20Sunset%20Boat%20Ride" class="btn">Book Now</a>
+        </div>
+
+        <div class="card">
+          <img src="img/Luxury-Boat-Rides.webp" alt="Luxury Boat">
+          <h3>🛶 Luxury Family Boat</h3>
+          <p>Private luxury boat for families & groups in Varanasi & Prayagraj.</p>
+          <p><strong>₹3500 per boat (max 6 persons)</strong></p>
+          <a href="https://wa.me/919336911606?text=I%20want%20to%20book%20a%20Luxury%20Family%20Boat" class="btn">Book Now</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="boat-types">
+  <div class="container">
+    <h2>🚤 Types of Boat Booking in Varanasi</h2>
+    <p class="intro-text">
+      In Varanasi, boat rides are one of the most spiritual and memorable experiences. 
+      Here are the most popular types of boats you can book with us:
+    </p>
+
+    <div class="card-grid">
+      <div class="card">
+        <img src="img/rowing.jpg" alt="Rowing Boat in Varanasi">
+        <h3>Rowing Boats</h3>
+        <p>Traditional wooden boats rowed manually, perfect for a calm and soulful ride on the Ganga.</p>
+        <p><strong>₹300–₹600</strong> per ride</p>
+      </div>
+
+      <div class="card">
+        <img src="img/motorboat.jpg" alt="Motor Boat in Varanasi">
+        <h3>Motor Boats</h3>
+        <p>Fast and convenient, ideal for covering multiple ghats quickly.</p>
+        <p><strong>₹800–₹1500</strong> per ride</p>
+      </div>
+
+      <div class="card">
+        <img src="img/Luxury-Boat-Rides.webp" alt="Luxury Boat in Varanasi">
+        <h3>Luxury Boats</h3>
+        <p>Fully decorated boats with comfortable seating, often used for families and special ceremonies.</p>
+        <p><strong>₹2000+</strong> per ride</p>
+      </div>
+
+      <div class="card">
+        <img src="img/Cruise.jpeg" alt="Cruise in Varanasi">
+        <h3>Ganga Cruises</h3>
+        <p>Premium large boats offering panoramic views of Varanasi’s ghats during sunrise and Ganga Aarti.</p>
+        <p><strong>₹2500+</strong> per ride</p>
+      </div>
+    </div>
+  </div>
+</section>
+        </div>
+        </section>
+
+
+        <footer id="tfooter" class="w-100"></footer>
+    </section>
+</body>
+<script>
+    loadHTML('header.html', 'theader');
+    // loadHTML('body.html', 'tbody');
+    loadHTML('footer.html', 'tfooter');
+</script>
+<script>
+document.getElementById("careerForm").addEventListener("submit", function(e){
+  e.preventDefault();
+
+  // Replace with your WhatsApp number (with country code, no +)
+  var phone = "919051972409";
+
+  var name = document.getElementById("name").value;
+  var email = document.getElementById("email").value;
+  var phoneInput = document.getElementById("phone").value;
+  var position = document.getElementById("position").value;
+  var message = document.getElementById("message").value;
+
+  var whatsappMessage = `Career Application%0A----------------------%0AName: ${name}%0AEmail: ${email}%0APhone: ${phoneInput}%0APosition: ${position}%0AMessage: ${message}`;
+
+  var url = `https://wa.me/${phone}?text=${whatsappMessage}`;
+  window.open(url, "_blank");
+});
+</script>
+
+<script>
+    $(document).ready(function(){
+        $(".owl-carousel").owlCarousel({
+            loop: true,               // Infinite loop
+            margin: 20,               // Space between items
+            nav: false,                // Show navigation arrows
+            autoplay: true,           // Enable autoplay
+            autoplayTimeout: 2500,    // Time between slides (2000ms = 2s)
+            autoplayHoverPause: true,
+            rtl: false,
+            responsive: {
+                0: { items: 1 },      // 1 item on small screens
+                600: { items: 2 },    // 2 items on medium screens
+                800: { items: 3 },
+                1000: { items: 4 },    // 3 items on large screens
+            }
+        });
+    });
+    $(window).on("load", function() {
+        setTimeout(function() {
+            $(".owl-carousel").trigger("refresh.owl.carousel");
+        }, 100);
+    });
+
+    function updateBeforeContent(selector, text) {
+        document.querySelector(selector).style.setProperty('--content', `"${text}"`);
+    }
+
+    // Example: Update the content dynamically
+    updateBeforeContent('.favdes .ib1', 'Kashmir – Paradise on Earth, with scenic valleys, serene lakes, snowy peaks, and rich culture.');
+    updateBeforeContent('.favdes .ib2', 'Manali – A Himalayan paradise with snow-capped peaks, lush valleys, adventure sports, and serene beauty.');
+    updateBeforeContent('.favdes .ib3', 'Agra – Home to the iconic Taj Mahal, rich history, Mughal architecture, and timeless cultural heritage.');
+    updateBeforeContent('.favdes .ib4', 'Jaipur – The Pink City of royal palaces, vibrant culture, majestic forts, and rich heritage.');
+
+    </script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init(); // Initialize AOS
+    </script>
+
+</html>
