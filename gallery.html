@@ -41,33 +41,47 @@
 
     /* ---------------- GALLERY ---------------- */
     .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 15px;
-      padding: 20px;
-      background: #f9f9f9;
-    }
-    .gallery img {
-      width: 100%;
-      height: 220px;
-      object-fit: cover;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      cursor: pointer;
-    }
-    .gallery img:hover {
-      transform: scale(1.05);
-      box-shadow: 0 6px 15px rgba(0,0,0,0.2);
-    }
-    @media(max-width:768px){
-      .gallery img { height: 180px; }
-    }
-    @media(max-width:480px){
-      .gallery { grid-template-columns: 1fr 1fr; }
-      .gallery img { height: 150px; }
-    }
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 15px;
+  margin-top: 20px;
+}
 
+.gallery img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+  @media (max-width: 768px) {
+  .video-section h2 {
+    font-size: 1.6rem;
+  }
+
+  .gallery img {
+    height: 180px;
+  }
+}
+
+@media (max-width: 480px) {
+  .video-section h2 {
+    font-size: 1.4rem;
+  }
+
+  .gallery {
+    grid-template-columns: 1fr; /* single column for small screens */
+  }
+
+  .gallery img {
+    height: 200px;
+  }
+}
     /* ---------------- HEADINGS ---------------- */
     h2 {
       font-size: 2rem;
@@ -89,24 +103,25 @@
 
     /* ---------------- VIDEO SECTION ---------------- */
     .video-section {
-      text-align: center;
-      padding: 40px 20px;
-      background: #222;
-      color: #fff;
-    }
-    .video-section h2 {
-      font-size: 2rem;
-      margin-bottom: 20px;
-      color: #ff9800;
-      text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
-    }
-    .video-section video {
-      width: 100%;
-      max-width: 900px;
-      height: 80%;
-      border-radius: 10px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-    }
+  text-align: center;
+  padding: 50px 20px;
+  background: #f9f9f9;
+}
+
+.video-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.video-section video {
+  width: 200%;
+  height: 80%;
+  max-width: 900px; /* limit on big screens */
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
   </style>
 </head>
 <body>
@@ -123,6 +138,14 @@
           <a href="index.html" class="text-warning">Home</a> <i class="fa-solid fa-angles-right"></i> Gallery
         </p>
       </div>
+    </section>
+     <!-- VIDEO -->
+    <section class="video-section">
+      <h2>🎥 Our Travel Highlights</h2>
+      <video controls autoplay muted loop>
+        <source src="video/video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
     </section>
 
     <!-- GALLERY -->
@@ -141,16 +164,6 @@
         </section>
       </div>
     </section>
-
-    <!-- VIDEO -->
-    <section class="video-section">
-      <h2>🎥 Our Travel Highlights</h2>
-      <video controls autoplay muted loop>
-        <source src="video/video.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-    </section>
-
     <footer id="tfooter" class="w-100"></footer>
   </section>
 
