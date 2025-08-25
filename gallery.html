@@ -23,286 +23,142 @@
     <title>Rajat Tours&Travels</title>
     <link rel="icon" type="image/x-icon" href="images/logo.ico">
     <!-- Owl Carousel CSS -->
-    
-    <style>
-        @media(max-width: 1250px){
-            .gallerycol3{
-                width: auto !important;
-            }
-        }
-        @media(max-width: 960px){
-            .gallery3{
-                width: auto !important;
-                height: 28rem !important;
-            }
-            .carousel-inner{
-                max-height: 750px;
-            }
-            .carousel-inner img{
-                height: 500px !important;
-            }
-            .carousel-caption{
-                display: none;
-            }
-        }
-        @media(max-width: 560px){
-            .gallery3{
-                width: auto !important;
-                height: 38rem !important;
-            }
-            .carousel-inner{
-                max-height: 750px;
-            }
-            .carousel-inner img{
-                height: 400px !important;
-            }
-        }
-        @media(max-width: 450px){
-            .gallery3{
-                width: auto !important;
-                height: 48rem !important;
-            }
-        }
-        @media (max-width: 660px){
-            .heroimgbox {
-                min-width: 0 !important;
-            }
-            .favdesh1{
-                font-size: 35px;
-            }
-            .reservecon{
-                min-width: 280px !important;
-            }
-            .testimonialdiv{
-                width: 100% !important;
-            }
-            .minscreen{
-                overflow: hidden;
-            }
-            .attract{
-                min-width: 100% !important;
-            }
-        }
-        @media(max-width: 400px){
-            .reservecon{
-                min-width: 0px !important;
-            }
-            .carousel-inner{
-                max-height: 750px;
-            }
-            .carousel-inner img{
-                height: 300px;
-            }
-        }
-        .carousel-inner{
-            max-height: 750px;
-        }
-        .carousel-inner img{
-            height: 800px;
-        }
-        /* .carousel-item{
 
-        } */
-    .owl-carousel .owl-item img {
-        height: 220px;
+  <style>
+    /* ---------------- RESPONSIVE ---------------- */
+    @media(max-width:960px){
+      .carousel-inner img { height: 500px !important; }
+      .carousel-caption { display: none; }
     }
-    .imgbox .text-center .pricedisplay{
-        display: none;
+    @media(max-width:560px){
+      .carousel-inner img { height: 400px !important; }
     }
-    .imgbox p{
-        text-transform: capitalize;
-    }
-    .item img{
-        height: 600px !important;
-        /* max-height: 500px; */
+    @media(max-width:400px){
+      .carousel-inner img { height: 300px !important; }
     }
 
-    /* Gallery Section */
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 15px;
-  padding: 20px;
-  background: #f9f9f9;
-}
+    .carousel-inner img { height: 800px; max-height: 750px; }
 
-.gallery img {
-  width: 100%;
-  height: 220px;
-  object-fit: cover;   /* Keeps image ratio while filling */
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  cursor: pointer;
-}
+    /* ---------------- GALLERY ---------------- */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 15px;
+      padding: 20px;
+      background: #f9f9f9;
+    }
+    .gallery img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    }
+    @media(max-width:768px){
+      .gallery img { height: 180px; }
+    }
+    @media(max-width:480px){
+      .gallery { grid-template-columns: 1fr 1fr; }
+      .gallery img { height: 150px; }
+    }
 
-.gallery img:hover {
-  transform: scale(1.05);
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
-}
+    /* ---------------- HEADINGS ---------------- */
+    h2 {
+      font-size: 2rem;
+      color: #333;
+      font-weight: bold;
+      text-align: center;
+      margin: 20px 0;
+      position: relative;
+    }
+    h2::after {
+      content: "";
+      display: block;
+      width: 80px;
+      height: 4px;
+      background: #ff9800;
+      margin: 10px auto 0;
+      border-radius: 5px;
+    }
 
-/* Mobile Optimization */
-@media (max-width: 768px) {
-  .gallery {
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 10px;
-  }
-
-  .gallery img {
-    height: 180px;
-  }
-}
-
-@media (max-width: 480px) {
-  .gallery {
-    grid-template-columns: 1fr 1fr; /* 2 images per row */
-  }
-
-  .gallery img {
-    height: 150px;
-  }
-}
-h2 {
-  font-size: 2rem;
-  color: #333;
-}
-
-h2{
-  content: "";
-  display:flex;
-  width: 80px;
-  height: 43px;
-  margin: 10px auto 0;
-  background: #ff9800; /* Accent line under heading */
-  border-radius: 5px;
-}
-
-
-
-    </style>
+    /* ---------------- VIDEO SECTION ---------------- */
+    .video-section {
+      text-align: center;
+      padding: 40px 20px;
+      background: #222;
+      color: #fff;
+    }
+    .video-section h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #ff9800;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+    }
+    .video-section video {
+      width: 100%;
+      max-width: 900px;
+      height: 80%;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    }
+  </style>
 </head>
 <body>
-    <section class="minscreen">
-        <header id="theader" class="w-100 fixed-top"></header>
-        <!-- <section class="hero p-5 pb-2 w-100 bg-white">
-            <section class="row mt-5 pt-4 d-flex herocon">
-                <div class="col-lg-6 mt-5 p-4 pl-5">
-                    <p class="herop px-3 fw-bold mt-4"><i class="fa-solid fa-plane fa-rotate-by" style="--fa-rotate-angle: -45deg;"></i> &nbsp &nbsp Explore the wonderful places!</p>
-                    <h1 class="heroh1 mt-4 px-2">Vacation &&nbspenjoy <span style="color: var(--theme-blue);">new places</span> in the World <img src="https://media.istockphoto.com/id/914505568/vector/people-on-a-desert-island-a-cry-for-help.jpg?s=612x612&w=0&k=20&c=_EBrWJV5D-9Rmej6qq7Ld1qYjcJTWkFZWvgltMC5Bz8=" alt="" height="70"></h1>
-                    <p class="herotext mt-4 px-3">Destinize membuat kamu selalu update terkait tempat liburan baru di Indonesia dengan mengikuti perkembangan para influencer di sosial media ✨</p>
-                    <span>
-                        <button class="mt-4 mx-5 herobtn">Explore Us &nbsp&nbsp<i class="fa-solid fa-arrow-right-long"></i></button>
-                        <button class="rounded-5 playbtn"><i class="fa-solid fa-play"></i></button> <span class="fw-bold" style="color: var(--theme-darksilver);">&nbsp&nbspView Demo</span>
-                    </span>
-                </div>
-                <div class="col-lg-6 mt-5">
-                    <div class="heroimgbox">
-                        <img src="images/heroimg.png" alt="">
-                    </div>
-                </div>
-            </section>
-        </section> -->
-        <section class="hero py-5 pb-3 w-100 mt-0" style="background: url('https://res.cloudinary.com/kmadmin/image/upload/v1702920274/kiomoi/Ayodhya-6-01-final-1024x626_3079.jpg');background-attachment: fixed; background-repeat: no-repeat; background-size: cover; background-position: center;"> <!-- Midnight Blue -->
-        <div class="container text-center text-white py-5">
-            <h1 class="display-4 fw-bold mt-5"><i class="fas fa-images"></i>Our Travel Gallery</h1>
-            <p class="lead mt-3 mb-4"><a href="index.html" class="text-warning">Home</a> <i class="fa-solid fa-angles-right"></i> Gallery</p>
-            <!-- <a href="#about" class="btn btn-outline-light px-4 me-3">Learn More</a> -->
-            <!-- <a href="#contact" class="btn btn-light px-4">Contact Us</a> -->
-        </div>
-        </section>
+  <section class="minscreen">
+    <header id="theader" class="w-100 fixed-top"></header>
 
-        <section class="py-5 bg-white w-100">
-        <div class="container">
-            <div class="row align-items-center">
-            <!-- Image Column -->
-            <!-- <div class="col-lg-6 mb-4 mb-lg-0 text-center">
-                <img src="img/Varanasi about.jpg" alt="Team" class="img-fluid shadow rounded-1">
-            </div> -->
-
-            <!-- Text Column -->
-            <h2>📸 Our Gallery</h2>
-     <section class="gallery">         
-      <img src="img\varanashi2.webp" alt="varanashi">
-      <img src="img\varanashi _boat.jpeg" alt="varanashi2">
-      <img src="img\kashi1.jpg" alt="Kashi1">
-      <img src="img\kashi2.webp" alt="kashi2">
-      <img src="img\Ram_Mandir1.avif" alt="Ram_mandir1">
-      <img src="img\Ram_Mandir2.avif" alt="Ram_mandir2">
-      <img src="img\prayagraj1.webp" alt="prayagraj1">
-      <img src="img\prayagraj2.jpeg" alt="prayagraj2">
-      
+    <!-- HERO -->
+    <section class="hero py-5 pb-3 w-100 mt-0" 
+      style="background: url('https://res.cloudinary.com/kmadmin/image/upload/v1702920274/kiomoi/Ayodhya-6-01-final-1024x626_3079.jpg');
+      background-attachment: fixed; background-repeat: no-repeat; background-size: cover; background-position: center;">
+      <div class="container text-center text-white py-5">
+        <h1 class="display-4 fw-bold mt-5"><i class="fas fa-images"></i> Our Travel Gallery</h1>
+        <p class="lead mt-3 mb-4">
+          <a href="index.html" class="text-warning">Home</a> <i class="fa-solid fa-angles-right"></i> Gallery
+        </p>
+      </div>
     </section>
-        </div>
+
+    <!-- GALLERY -->
+    <section class="py-5 bg-white w-100">
+      <div class="container">
+        <h2>📸 Our Gallery</h2>
+        <section class="gallery">         
+          <img src="img/varanashi2.webp" alt="varanashi">
+          <img src="img/varanashi _boat.jpeg" alt="varanashi2">
+          <img src="img/kashi1.jpg" alt="Kashi1">
+          <img src="img/kashi2.webp" alt="kashi2">
+          <img src="img/Ram_Mandir1.avif" alt="Ram_mandir1">
+          <img src="img/Ram_Mandir2.avif" alt="Ram_mandir2">
+          <img src="img/prayagraj1.webp" alt="prayagraj1">
+          <img src="img/prayagraj2.jpeg" alt="prayagraj2">
         </section>
-
-
-        <footer id="tfooter" class="w-100"></footer>
+      </div>
     </section>
-</body>
-<script>
+
+    <!-- VIDEO -->
+    <section class="video-section">
+      <h2>🎥 Our Travel Highlights</h2>
+      <video controls autoplay muted loop>
+        <source src="video/video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </section>
+
+    <footer id="tfooter" class="w-100"></footer>
+  </section>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
     loadHTML('header.html', 'theader');
-    // loadHTML('body.html', 'tbody');
     loadHTML('footer.html', 'tfooter');
-</script>
-<script>
-document.getElementById("careerForm").addEventListener("submit", function(e){
-  e.preventDefault();
-
-  // Replace with your WhatsApp number (with country code, no +)
-  var phone = "919051972409";
-
-  var name = document.getElementById("name").value;
-  var email = document.getElementById("email").value;
-  var phoneInput = document.getElementById("phone").value;
-  var position = document.getElementById("position").value;
-  var message = document.getElementById("message").value;
-
-  var whatsappMessage = `Career Application%0A----------------------%0AName: ${name}%0AEmail: ${email}%0APhone: ${phoneInput}%0APosition: ${position}%0AMessage: ${message}`;
-
-  var url = `https://wa.me/${phone}?text=${whatsappMessage}`;
-  window.open(url, "_blank");
-});
-</script>
-
-<script>
-    $(document).ready(function(){
-        $(".owl-carousel").owlCarousel({
-            loop: true,               // Infinite loop
-            margin: 20,               // Space between items
-            nav: false,                // Show navigation arrows
-            autoplay: true,           // Enable autoplay
-            autoplayTimeout: 2500,    // Time between slides (2000ms = 2s)
-            autoplayHoverPause: true,
-            rtl: false,
-            responsive: {
-                0: { items: 1 },      // 1 item on small screens
-                600: { items: 2 },    // 2 items on medium screens
-                800: { items: 3 },
-                1000: { items: 4 },    // 3 items on large screens
-            }
-        });
-    });
-    $(window).on("load", function() {
-        setTimeout(function() {
-            $(".owl-carousel").trigger("refresh.owl.carousel");
-        }, 100);
-    });
-
-    function updateBeforeContent(selector, text) {
-        document.querySelector(selector).style.setProperty('--content', `"${text}"`);
-    }
-
-    // Example: Update the content dynamically
-    updateBeforeContent('.favdes .ib1', 'Kashmir – Paradise on Earth, with scenic valleys, serene lakes, snowy peaks, and rich culture.');
-    updateBeforeContent('.favdes .ib2', 'Manali – A Himalayan paradise with snow-capped peaks, lush valleys, adventure sports, and serene beauty.');
-    updateBeforeContent('.favdes .ib3', 'Agra – Home to the iconic Taj Mahal, rich history, Mughal architecture, and timeless cultural heritage.');
-    updateBeforeContent('.favdes .ib4', 'Jaipur – The Pink City of royal palaces, vibrant culture, majestic forts, and rich heritage.');
-
-    </script>
-    <!-- AOS JS -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init(); // Initialize AOS
-    </script>
-
+    AOS.init();
+  </script>
+</body>
 </html>
