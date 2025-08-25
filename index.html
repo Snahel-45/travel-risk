@@ -425,13 +425,13 @@
                     <div class="stars text-warning">★★★★★</div>
                     </div>
                     <div class="card text-center shadow p-3">
-                    <img src="img/testimoni3.jpeg" alt="Anita Sharma" class="rounded-circle mx-auto" style="width:100px;height:100px;">
+                    <img src="img/tasti.jpg" alt="Anita Sharma" class="rounded-circle mx-auto" style="width:100px;height:100px;">
                     <h3 class="mt-2">Anita Sharma</h3>
                     <p class="quote">"Prompt service and courteous drivers. Our trip to Haridwar was wonderful."</p>
                     <div class="stars text-warning">★★★★☆</div>
                     </div>
                     <div class="card text-center shadow p-3">
-                    <img src="img/testimoni.jpeg" alt="Dev Mehra" class="rounded-circle mx-auto" style="width:100px;height:100px;">
+                    <img src="img/testimoni3.jpeg" alt="Dev Mehra" class="rounded-circle mx-auto" style="width:100px;height:100px;">
                     <h3 class="mt-2">Dev Mehra</h3>
                     <p class="quote">"Perfect family vacation van. Reliable and safe. Will definitely use again."</p>
                     <div class="stars text-warning">★★★★★</div>
@@ -443,19 +443,19 @@
         <!-- Carousel Script -->
         <script>
         $(document).ready(function(){
-            // $(".vehicle-carousel").owlCarousel({
-            // loop:true,
-            // margin:20,
-            // nav:true,
-            // autoplay:true,
-            // autoplayTimeout:2500,
-            // autoplayHoverPause:true,
-            // responsive:{
-            //     0:{ items:1 },
-            //     600:{ items:2 },
-            //     1000:{ items:3 }
-            // }
-            // });
+            $(".vehicle-carousel").owlCarousel({
+            loop:true,
+            margin:20,
+            nav:false,
+            autoplay:true,
+            autoplayTimeout:2500,
+            autoplayHoverPause:true,
+            responsive:{
+                0:{ items:1 },
+                600:{ items:2 },
+                1000:{ items:3 }
+            }
+            });
 
             $(".testimonial-carousel").owlCarousel({
             loop:true,
