@@ -378,8 +378,8 @@
                     </div>
                         <div class="card text-center shadow-lg p-3">
         <img src="img/car 5 seat.jpg" alt="Innova Crysta" class="img-fluid rounded">
-        <h3 class="mt-3">5–7 Seater Family Car</h3>
-        <p class="text-success">Innova, Fortuner, Audi, BMW Available</p>
+        <h3 class="mt-3">5–7 Seater Family/Group Car</h3>
+        <p class="text-success">Innova, Fortuner, Tata Available</p>
       </div>
 
       <!-- Luxury Bus -->
@@ -392,7 +392,7 @@
       <!-- Premium Cars -->
       <div class="card text-center shadow-lg p-3">
         <img src="img/p_car.avif" alt="Luxury Cars" class="img-fluid rounded">
-        <h3 class="mt-3">Premium Cars</h3>
+        <h3 class="mt-3">Enjoy Premium Cars</h3>
         <p class="text-success">Jaguar, Mercedes, BMW, Audi Available</p>
       </div>
                     </div>
@@ -431,7 +431,7 @@
                     <div class="stars text-warning">★★★★☆</div>
                     </div>
                     <div class="card text-center shadow p-3">
-                    <img src="img/testimoni3.jpeg" alt="Dev Mehra" class="rounded-circle mx-auto" style="width:100px;height:100px;">
+                    <img src="img/dev.jpeg" alt="Dev Mehra" class="rounded-circle mx-auto" style="width:100px;height:100px;">
                     <h3 class="mt-2">Dev Mehra</h3>
                     <p class="quote">"Perfect family vacation van. Reliable and safe. Will definitely use again."</p>
                     <div class="stars text-warning">★★★★★</div>
@@ -490,7 +490,7 @@
             <div class="col-md-6">
                 <div class="card shadow border-0 rounded-3">
                 <div class="card-body p-5">
-                    <form>
+                    <form id="contactForm">
                     <div class="mb-3">
                         <label for="name" class="form-label fw-semibold">Full Name *</label>
                         <input type="text" class="form-control" id="name" placeholder="Enter your full name" required>
@@ -531,19 +531,22 @@
     loadHTML('footer.html', 'tfooter');
 </script>
 <script>
-document.getElementById("careerForm").addEventListener("submit", function(e){
+document.getElementById("contactForm").addEventListener("submit", function(e){
   e.preventDefault();
 
   // Replace with your WhatsApp number (with country code, no +)
-  var phone = "919051972409";
+  var phone = "919336911606";
 
   var name = document.getElementById("name").value;
   var email = document.getElementById("email").value;
   var phoneInput = document.getElementById("phone").value;
-  var position = document.getElementById("position").value;
   var message = document.getElementById("message").value;
 
-  var whatsappMessage = `Career Application%0A----------------------%0AName: ${name}%0AEmail: ${email}%0APhone: ${phoneInput}%0APosition: ${position}%0AMessage: ${message}`;
+  var whatsappMessage = `Hello, I want to contact you.%0A%0A` +
+                        `👤 Name: ${name}%0A` +
+                        `📧 Email: ${email}%0A` +
+                        `📞 Phone: ${phoneInput}%0A` +
+                        `💬 Message: ${message}`;
 
   var url = `https://wa.me/${phone}?text=${whatsappMessage}`;
   window.open(url, "_blank");
