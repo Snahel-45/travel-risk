@@ -29,6 +29,13 @@
     @media(max-width:960px){
       .carousel-inner img { height: 500px !important; }
       .carousel-caption { display: none; }
+      .video-section video {
+        transform: none !important;
+      }
+      .vcn{
+        padding: 0 !important;
+        background-color: transparent !important;
+      }
     }
     @media(max-width:560px){
       .carousel-inner img { height: 400px !important; }
@@ -103,7 +110,7 @@
 
     /* ---------------- VIDEO SECTION ---------------- */
     .video-section {
-  text-align: center;
+  /* text-align: center; */
   padding: 50px 20px;
   background: #f9f9f9;
   
@@ -117,10 +124,11 @@
 
 .video-section video {
   width: 100%;
-  height: 80%;
+  /* height: 80%; */
   max-width: 900px; /* limit on big screens */
   border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transform: scale(1.28,1);
+  /* box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); */
 }
 
   </style>
@@ -130,7 +138,7 @@
     <header id="theader" class="w-100 fixed-top"></header>
 
     <!-- HERO -->
-    <section class="hero py-5 pb-3 w-100 mt-0" 
+    <section class="hero py-5 pb-3 w-100 mt-0"
       style="background: url('img/updated_background.jpg');
       background-attachment: fixed; background-repeat: no-repeat; background-size: cover; background-position: center;">
       <div class="container text-center text-white py-5">
@@ -141,13 +149,181 @@
       </div>
     </section>
      <!-- VIDEO -->
-    <section class="video-section">
+    <!-- <section class="video-section">
       <h2>🎥 Our Travel Highlights</h2>
       <video controls autoplay muted loop>
         <source src="video/video.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
+    </section> -->
+    <section class="video-section py-5 bg-light w-100">
+      <h2 class="text-dark mb-4">🎥 Our Travel Highlights</h2>
+
+      <div class="container-fluid shadow rounded bg-dark">
+        <div class="row align-items-center p-2">
+          
+          <div class="col-md-9 mb-4 mb-md-0">
+            <!-- <h2 class="text-dark mb-4">🎥 Our Travel Highlights</h2> -->
+            
+            <div class="px-4">
+              <p class="text-white fs-3 lh-lg">
+                ✨ Embark on a journey like never before! From <span class="fw-bold text-warning">snow-capped mountains</span> 
+                to <span class="fw-bold text-info">sun-kissed beaches</span>, our travels capture the essence of adventure 
+                and the beauty of cultures across the globe. 
+              </p>
+
+              
+
+              <!-- Extra Highlights -->
+              <ul class="list-unstyled text-white fs-6 lh-lg">
+                <li class="bg-black rounded-2 p-2 mb-1">🌄 <span class="fw-bold text-info">Breathtaking landscapes</span> from valleys to mountaintops</li>
+                <li class="bg-black rounded-2 p-2 mb-1">🏰 <span class="fw-bold text-warning">Cultural encounters</span> with local traditions & festivals</li>
+                <li class="bg-black rounded-2 p-2 mb-1">🍴 <span class="fw-bold text-success">Authentic cuisines</span> that capture flavors of each land</li>
+                <li class="bg-black rounded-2 p-2 mb-1">📸 <span class="fw-bold text-danger">Unforgettable photography spots</span> for your travel diary</li>
+                <li class="bg-black rounded-2 p-2 mb-1">🤝 <span class="fw-bold text-light">Friendly guides</span> who make every moment special</li>
+              </ul>
+
+              
+
+              <p class="text-end">
+                <a href="#contact" class="btn btn-gradient btn-lg rounded-pill shadow px-4 py-2 fw-bold bg-white">
+                  🚀 Plan Your Trip Today
+                </a>
+              </p>
+              <p class="text-light fs-6 fst-italic mt-3 text-end">
+                🌟 Travel is not just about places, it’s about <span class="fw-bold text-warning">stories, smiles, and memories</span> that last forever. 
+                Let us craft yours today! ✈️
+              </p>
+              <p class="text-warning fst-italic fs-6 lh-lg">
+                🌍 Whether it’s a <span class="fw-bold text-light">soulful solo trip</span>, a 
+                <span class="fw-bold text-light">fun-filled family vacation</span>, or an 
+                <span class="fw-bold text-light">exciting group adventure</span>, 
+                we promise to turn your dreams into unforgettable memories. 💫
+              </p>
+            </div>
+          </div>
+<!-- Video Section -->
+          <div class="col-md-3 bg-white p-3 px-5 rounded-0 vcn">
+            <!-- <div class="ratio ratio-4x3 rounded-1"> -->
+              <video controls autoplay muted loop class="w-100 rounded" style="">
+                <source src="video/video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            <!-- </div> -->
+          </div>
+
+        </div>
+      </div>
     </section>
+      <style>
+    /* ---------------- RESPONSIVE ---------------- */
+    @media(max-width:960px){
+      .carousel-inner img { height: 500px !important; }
+      .carousel-caption { display: none; }
+      .video-section video {
+        transform: none !important;
+      }
+      .vcn{
+        padding: 0 !important;
+        background-color: transparent !important;
+      }
+    }
+    @media(max-width:560px){
+      .carousel-inner img { height: 400px !important; }
+    }
+    @media(max-width:400px){
+      .carousel-inner img { height: 300px !important; }
+    }
+
+    .carousel-inner img { height: 800px; max-height: 750px; }
+
+    /* ---------------- GALLERY ---------------- */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-gap: 15px;
+      margin-top: 20px;
+    }
+
+.gallery img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+  @media (max-width: 768px) {
+  .video-section h2 {
+    font-size: 1.6rem;
+  }
+
+  .gallery img {
+    height: 180px;
+  }
+}
+
+@media (max-width: 480px) {
+  .video-section h2 {
+    font-size: 1.4rem;
+  }
+
+  .gallery {
+    grid-template-columns: 1fr; /* single column for small screens */
+  }
+
+  .gallery img {
+    height: 200px;
+  }
+}
+    /* ---------------- HEADINGS ---------------- */
+    h2 {
+      font-size: 2rem;
+      color: #333;
+      font-weight: bold;
+      text-align: center;
+      margin: 20px 0;
+      position: relative;
+    }
+    h2::after {
+      content: "";
+      display: block;
+      width: 80px;
+      height: 4px;
+      background: #ff9800;
+      margin: 10px auto 0;
+      border-radius: 5px;
+    }
+
+    /* ---------------- VIDEO SECTION ---------------- */
+    .video-section {
+  /* text-align: center; */
+  padding: 50px 20px;
+  background: #f9f9f9;
+  
+}
+
+.video-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.video-section video {
+  width: 100%;
+  /* height: 80%; */
+  max-width: 900px; /* limit on big screens */
+  border-radius: 12px;
+  transform: scale(1.28,1);
+  /* box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); */
+}
+
+  </style>
+
 
     <!-- GALLERY -->
     <section class="py-5 bg-white w-100">
